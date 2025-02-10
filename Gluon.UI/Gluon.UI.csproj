@@ -17,7 +17,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Core\Gluon.Core.csproj" />
+		<ProjectReference Include="..\Gluon.Core\Gluon.Core.csproj" />
 		<ProjectReference Include="..\Gluon.Reactive\Gluon.Reactive.csproj" />
 	</ItemGroup>
 
