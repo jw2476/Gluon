@@ -1,8 +1,6 @@
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
 using Gluon.Core;
-using Gluon.Reactive;
 
 namespace Gluon.UI;
 
@@ -59,38 +57,6 @@ public static partial class UI
         {
             Content = self.Disconnect(),
         };
-    }
-
-    public static T OnClick<T>(this T self, out IObservable<Unit> handler)
-        where T : ButtonBase
-    {
-        var subject = new Subject<Unit>();
-        self.Click += (_, _) => subject.OnNext(new());
-        handler = subject;
-
-        return self;
-    }
-
-    public static T WithText<T>(this T self, out ReadWriteBinding<string> value)
-        where T : TextBox
-    {
-        value = new(string.Empty);
-        self.SetBinding(System.Windows.Controls.TextBox.TextProperty, value);
-        return self;
-    }
-
-    public static T WithOrientation<T>(this T self, ReadWriteBinding<Orientation> value)
-        where T : StackPanel
-    {
-        self.SetBinding(System.Windows.Controls.StackPanel.OrientationProperty, value);
-        return self;
-    }
-
-    public static T WithMinWidth<T>(this T self, ReadWriteBinding<double> value)
-        where T : FrameworkElement
-    {
-        self.SetBinding(FrameworkElement.WidthProperty, value);
-        return self;
     }
 }
 

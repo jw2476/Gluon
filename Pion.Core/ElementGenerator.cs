@@ -1,45 +1,44 @@
 ﻿using System.Reflection;
 using System.Windows;
 using System.Windows.Data;
+using Gluon.Core;
 
 namespace Pion.Core;
 
-public sealed record ElementGenerator<T> where T : FrameworkElement
+public sealed record ElementGenerator
 {
-    private static readonly string ElementName = typeof(T).Name;
-    private static readonly string ElementFullName = typeof(T).FullName ?? throw new ArgumentException();
+    private readonly Type _type;
+    private readonly string _elementFullName;
 
-    private sealed record Property(string Name, string TypeName, BindingMode Mode)
+    private static readonly List<string> _globalPropertyNames = [];
+
+    private ElementGenerator(Type type)
     {
-        public string Generate()
-        {
-            var bindingType = Mode switch
-            {
-                BindingMode.OneWay => "ReadWriteBinding",
-                BindingMode.TwoWay => "out ReadWriteBinding",
-                BindingMode.OneWayToSource => "out ReadOnlyBinding",
-                _ => throw new ArgumentException()
-            };
-
-            return @$"
-public static {ElementName} With{Name}(this {ElementName} self, {bindingType}<{TypeName}> value)
-{{
-    value = new(string.Empty);
-    self.SetBinding({ElementFullName}.{Name}Property, value);
-    return self;
-}}
-";
-        }
+        _type = type;
+        _elementFullName = _type.FullName
+            ?? throw new ArgumentException();
     }
 
-    private static string GenerateBindings()
+    private static string PrintType(Type type)
     {
-        var properties = typeof(T)
+        var typeDefinition = type.FullName
+                ?? throw new ArgumentException(); ;
+        if (type.GetGenericArguments().Length == 0)
+        {
+            return typeDefinition;
+        }
+        var genericArguments = type.GetGenericArguments();
+        var unmangledName = typeDefinition[..typeDefinition.IndexOf('`')];
+        return unmangledName + "<" + string.Join(",", genericArguments.Select(PrintType)) + ">";
+    }
+
+    private string GenerateBindings()
+    {
+        var properties = _type
             .GetFields(BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy)
             .Where(field =>
                 field.Name.EndsWith("Property") &&
                 field.FieldType == typeof(DependencyProperty))
-            .Where(field => typeof(T).GetProperty(field.Name[..^8])?.PropertyType.Name != null)
             .Select(field =>
             {
                 var name = field.Name[..^8];
@@ -63,40 +62,102 @@ public static {ElementName} With{Name}(this {ElementName} self, {bindingType}<{T
                     _ => throw new ArgumentException(),
                 };
 
-                var typeName = typeof(T).GetProperty(field.Name[..^8])!.PropertyType.FullName
+
+                var isGlobalProperty = _type.GetProperty(name)?.PropertyType == null;
+                if (isGlobalProperty)
+                {
+                    if (_globalPropertyNames.Contains(name))
+                    {
+                        return null;
+                    }
+
+                    _globalPropertyNames.Add(name);
+                }
+
+                var type = _type.GetProperty(name)?.PropertyType
+                    ?? metadata?.DefaultValue.GetType()
                     ?? throw new ArgumentException();
 
-                var extra = mode switch
+                var typeName = PrintType(type);
+
+                var assignment = mode switch
                 {
                     BindingMode.OneWayToSource => "value = new();",
                     BindingMode.TwoWay => @$"
-var metadata = {ElementFullName}.{name}Property.GetMetadata(typeof({field.DeclaringType!.FullName}))
+var metadata = {_elementFullName}.{name}Property.GetMetadata(typeof({field.DeclaringType!.FullName}))
     ?? throw new ArgumentException(""Can't get metadata."");
 value = new(({typeName})metadata.DefaultValue);",
                     _ => ""
                 };
 
+                var targetElementName = isGlobalProperty
+                    ? typeof(FrameworkElement).FullName!
+                    : _elementFullName;
+
                 return @$"
-public static {ElementFullName} With{name}(this {ElementFullName} self, {bindingType}<{typeName}> value)
+public static {targetElementName} With{name}(this {targetElementName} self, {bindingType}<{typeName}> value)
 {{
-    {extra.Indent()}
-    self.SetBinding({ElementFullName}.{name}Property, value);
+    {assignment.Indent()}
+    self.SetBinding({_elementFullName}.{name}Property, value);
     return self;
 }}";
             })
+            .OfType<string>()
             .ToList();
 
-        return string.Join("\n", properties).Trim();
+        return string.Join(Environment.NewLine, properties).Trim();
     }
 
-    public static string Generate()
+    private string GenerateEvents()
+    {
+        var events = _type
+            .GetEvents(BindingFlags.Instance | BindingFlags.Public | BindingFlags.FlattenHierarchy)
+            .Select(e =>
+            {
+                var name = e.Name;
+
+                var eventArgs = e.EventHandlerType?.GetMethod("Invoke")?.GetParameters()[1].ParameterType
+                    ?? throw new ArgumentException();
+                var eventPayload = eventArgs != typeof(RoutedEventArgs) ? eventArgs : typeof(Unit);
+                var eventPayloadName = PrintType(eventPayload);
+
+                return $@"
+public static {_elementFullName} On{name}(this {_elementFullName} self, out IObservable<{eventPayloadName}> handler)
+{{
+    var subject = new Subject<{eventPayloadName}>();
+    self.{name} += (_, {(eventPayload == typeof(Unit) ? "_" : "e")}) => subject.OnNext({(eventPayload == typeof(Unit) ? "new()" : "e")});
+    handler = subject;
+
+    return self;
+}}";
+            });
+
+        return string.Join(Environment.NewLine, events).Trim();
+    }
+
+    public string Generate()
     {
         return @$"
+using Gluon.Core;
+using Gluon.Reactive;
+
 namespace Gluon.UI;
 
 public static partial class UI
 {{
     {GenerateBindings().Indent()}
+
+    {GenerateEvents().Indent()}
 }}";
+    }
+
+    public static string Generate(Type type)
+    {
+        return new ElementGenerator(type).Generate();
+    }
+
+    public static string Generate<T>()
+    {
+        return new ElementGenerator(typeof(T)).Generate();
     }
 }
