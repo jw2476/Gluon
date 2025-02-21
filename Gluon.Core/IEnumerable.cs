@@ -1,16 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
+﻿namespace Gluon.Core;
 
-namespace Gluon.Core
+public static partial class Extensions
 {
-    public static partial class Extensions
+    public static void ForEach<T>(this IEnumerable<T> self, Action<T> action)
     {
-        public static void ForEach<T>(this IEnumerable<T> self, Action<T> action)
+        foreach (var item in self)
         {
-            foreach (var item in self)
-            {
-                action(item);
-            }
+            action(item);
         }
+    }
+
+    public static (IEnumerable<A>, IEnumerable<B>) Unzip<A, B>(this IEnumerable<(A, B)> self)
+    {
+        var array = self.ToArray();
+
+        return (
+            array.Select(x => x.Item1),
+            array.Select(x => x.Item2));
     }
 }
