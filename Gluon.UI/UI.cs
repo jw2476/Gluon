@@ -58,5 +58,12 @@ public static partial class UI
             Content = self.Disconnect(),
         };
     }
+
+    public static CheckBox CheckBox(this string self) {
+        return new CheckBox()
+        {
+            Content = self,
+        };
+    }
 }
 

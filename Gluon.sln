@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gluon.UI", "Gluon.UI\Gluon.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gluon.UI.Example", "Gluon.UI.Example\Gluon.UI.Example.csproj", "{E56D1766-45A2-4497-AEFF-B8ABCD02E4C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gluon.Reactive", "Gluon.Reactive\Gluon.Reactive.csproj", "{8538A9C4-3B59-4D05-AE84-0AD7222463DD}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{78B2CE64-C448-4ABA-972C-2BF753D1164F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pion.Core", "Pion.Core\Pion.Core.csproj", "{D784B22F-1436-4FAD-AE38-73D15241B3F7}"
@@ -35,10 +33,6 @@ Global
 		{E56D1766-45A2-4497-AEFF-B8ABCD02E4C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E56D1766-45A2-4497-AEFF-B8ABCD02E4C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E56D1766-45A2-4497-AEFF-B8ABCD02E4C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8538A9C4-3B59-4D05-AE84-0AD7222463DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8538A9C4-3B59-4D05-AE84-0AD7222463DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8538A9C4-3B59-4D05-AE84-0AD7222463DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8538A9C4-3B59-4D05-AE84-0AD7222463DD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D784B22F-1436-4FAD-AE38-73D15241B3F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D784B22F-1436-4FAD-AE38-73D15241B3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D784B22F-1436-4FAD-AE38-73D15241B3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU

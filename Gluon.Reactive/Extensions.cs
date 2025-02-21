@@ -51,4 +51,9 @@ public static class Extensions
     {
         return new Merge<T>(self, other);
     }
+
+    public static IObservable<IEnumerable<T?>> CombineLatest<T>(this IEnumerable<IObservable<T>> self)
+    {
+        return new CombineLatest<T>(self);
+    }
 }

@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel;
+using System.Reactive.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using Gluon.Core;
-using Gluon.Reactive;
 
 namespace Gluon.UI.Example;
 
@@ -34,15 +34,16 @@ internal class MainWindowViewModel : INotifyPropertyChanged
         var messages =
             onSend
             .ObserveOn(SynchronizationContext.Current!)
-            .Select(_ => message.Value)
+            .Select(_ =>
+            message.Value)
             .Where(message => !string.IsNullOrWhiteSpace(message))
             .Do(_ => message.Value = "")
             .Select(UI.TextBlock)
-            .Aggregate(
+            .Scan(
                 Enumerable.Empty<FrameworkElement>(),
                 (acc, item) => acc.Append(item))
-            .StartWith([])
-            .Select(UI.StackPanel);
+            .Select(UI.StackPanel)
+            .StartWith(UI.StackPanel([]));
 
         var messageBar =
             UI.StackPanel([messageBox, sendButton])

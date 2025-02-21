@@ -1,6 +1,6 @@
 
 using Gluon.Core;
-using Gluon.Reactive;
+using System.Reactive.Subjects;
 
 namespace Gluon.UI;
 

@@ -1,5 +1,5 @@
-﻿using System.Windows.Data;
-using Gluon.Reactive;
+﻿using System.Reactive.Disposables;
+using System.Windows.Data;
 
 namespace Gluon.UI;
 
@@ -29,6 +29,6 @@ public sealed class ReadOnlyBinding<T> : Binding, IObservable<T>
     {
         _observers.Add(observer);
 
-        return new Subscription(() => _observers.Remove(observer));
+        return Disposable.Create(() => _observers.Remove(observer));
     }
 }

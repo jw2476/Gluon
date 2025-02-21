@@ -14,11 +14,11 @@
 		</PackageReference>
 		<PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.12.0" />
 		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.12.0" />
+		<PackageReference Include="System.Reactive" Version="6.0.1" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\Gluon.Core\Gluon.Core.csproj" />
-		<ProjectReference Include="..\Gluon.Reactive\Gluon.Reactive.csproj" />
 	</ItemGroup>
 
 </Project>

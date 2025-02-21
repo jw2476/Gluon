@@ -139,7 +139,7 @@ public static {_elementFullName} On{name}(this {_elementFullName} self, out IObs
     {
         return @$"
 using Gluon.Core;
-using Gluon.Reactive;
+using System.Reactive.Subjects;
 
 namespace Gluon.UI;
 

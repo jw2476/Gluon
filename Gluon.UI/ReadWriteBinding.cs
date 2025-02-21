@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
+using System.Reactive.Disposables;
 using System.Windows.Data;
-using Gluon.Reactive;
 
 namespace Gluon.UI;
 
@@ -35,7 +35,7 @@ public sealed class ReadWriteBinding<T> : Binding, IObservable<T>, INotifyProper
     {
         _observers.Add(observer);
 
-        return new Subscription(() => _observers.Remove(observer));
+        return Disposable.Create(() => _observers.Remove(observer));
     }
 
     public static implicit operator ReadWriteBinding<T>(T self)
