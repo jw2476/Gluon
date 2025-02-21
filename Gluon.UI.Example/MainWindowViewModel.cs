@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
+using Gluon.Core;
 using Gluon.Reactive;
 
 namespace Gluon.UI.Example;
@@ -15,12 +17,19 @@ internal class MainWindowViewModel : INotifyPropertyChanged
             "Click me!"
             .TextBlock()
             .Button()
-            .OnClick(out var onSend);
+            .OnClick(out var onClick);
 
         var messageBox =
             UI.TextBox()
             .WithText(out var message)
+            .OnKeyUp(out var onKeyUp)
             .WithMinWidth(300.0);
+
+        var onSend =
+            onKeyUp
+            .Where(e => e.Key == Key.Enter)
+            .Select(_ => new Unit())
+            .Merge(onClick);
 
         var messages =
             onSend

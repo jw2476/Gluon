@@ -46,4 +46,9 @@ public static class Extensions
     {
         return new Where<T>(self, predicate);
     }
+
+    public static IObservable<T> Merge<T>(this IObservable<T> self, IObservable<T> other)
+    {
+        return new Merge<T>(self, other);
+    }
 }
