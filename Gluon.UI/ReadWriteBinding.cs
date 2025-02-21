@@ -4,27 +4,14 @@ using Gluon.Reactive;
 
 namespace Gluon.UI;
 
-public class TwoWay<T> : Binding, INotifyPropertyChanged, IObservable<T>
+public sealed class ReadWriteBinding<T> : Binding, IObservable<T>, INotifyPropertyChanged
 {
     private readonly List<IObserver<T>> _observers = [];
     private T _value;
 
-    public TwoWay(IObservable<T> observable)
+    public ReadWriteBinding(T initial)
     {
-        _ = observable.Subscribe(value =>
-        {
-            _value = value;
-            PropertyChanged?.Invoke(this, new(nameof(Value)));
-        });
-
-        Mode = BindingMode.TwoWay;
-        UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
-        Source = this;
-        Path = new(nameof(Value));
-    }
-
-    public TwoWay()
-    {
+        _value = initial;
         Mode = BindingMode.TwoWay;
         UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
         Source = this;
@@ -37,7 +24,7 @@ public class TwoWay<T> : Binding, INotifyPropertyChanged, IObservable<T>
         set
         {
             _value = value;
-            _observers.ForEach(observer => observer.OnNext(value!));
+            _observers.ForEach(observer => observer.OnNext(value));
             PropertyChanged?.Invoke(this, new(nameof(Value)));
         }
     }
@@ -51,8 +38,8 @@ public class TwoWay<T> : Binding, INotifyPropertyChanged, IObservable<T>
         return new Subscription(() => _observers.Remove(observer));
     }
 
-    public static implicit operator TwoWay<T>(T self)
+    public static implicit operator ReadWriteBinding<T>(T self)
     {
-        return new(new ObservableValue<T>(self));
+        return new ReadWriteBinding<T>(self);
     }
 }

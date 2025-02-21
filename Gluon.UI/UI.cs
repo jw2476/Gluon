@@ -71,22 +71,22 @@ public static partial class UI
         return self;
     }
 
-    public static T WithText<T>(this T self, out TwoWay<string> value)
+    public static T WithText<T>(this T self, out ReadWriteBinding<string> value)
         where T : TextBox
     {
-        value = new();
+        value = new(string.Empty);
         self.SetBinding(System.Windows.Controls.TextBox.TextProperty, value);
         return self;
     }
 
-    public static T WithOrientation<T>(this T self, OneWay<Orientation> value)
+    public static T WithOrientation<T>(this T self, ReadWriteBinding<Orientation> value)
         where T : StackPanel
     {
         self.SetBinding(System.Windows.Controls.StackPanel.OrientationProperty, value);
         return self;
     }
 
-    public static T WithMinWidth<T>(this T self, OneWay<double> value)
+    public static T WithMinWidth<T>(this T self, ReadWriteBinding<double> value)
         where T : FrameworkElement
     {
         self.SetBinding(FrameworkElement.WidthProperty, value);

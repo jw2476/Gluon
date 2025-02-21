@@ -2,12 +2,13 @@
 using Gluon.Reactive;
 
 namespace Gluon.UI;
-public sealed class OneWayToSource<T> : Binding, IObservable<T>
+
+public sealed class ReadOnlyBinding<T> : Binding, IObservable<T>
 {
     private readonly List<IObserver<T>> _observers = [];
-    private T _value;
+    private T? _value;
 
-    public OneWayToSource()
+    public ReadOnlyBinding()
     {
         Mode = BindingMode.OneWayToSource;
         Source = this;
@@ -16,8 +17,8 @@ public sealed class OneWayToSource<T> : Binding, IObservable<T>
 
     public T Value
     {
-        get => _value;
-        set
+        get => _value ?? throw new ArgumentException("Tried to read an unset binding.");
+        private set
         {
             _value = value;
             _observers.ForEach(observer => observer.OnNext(value));

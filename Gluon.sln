@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gluon.Reactive", "Gluon.Rea
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{78B2CE64-C448-4ABA-972C-2BF753D1164F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pion.Core", "Pion.Core\Pion.Core.csproj", "{D784B22F-1436-4FAD-AE38-73D15241B3F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pion.WPF", "Pion.WPF\Pion.WPF.csproj", "{4CCD93EF-4122-4F7D-BA2A-02DE33FA4EF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,8 +39,19 @@ Global
 		{8538A9C4-3B59-4D05-AE84-0AD7222463DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8538A9C4-3B59-4D05-AE84-0AD7222463DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8538A9C4-3B59-4D05-AE84-0AD7222463DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D784B22F-1436-4FAD-AE38-73D15241B3F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D784B22F-1436-4FAD-AE38-73D15241B3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D784B22F-1436-4FAD-AE38-73D15241B3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D784B22F-1436-4FAD-AE38-73D15241B3F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CCD93EF-4122-4F7D-BA2A-02DE33FA4EF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CCD93EF-4122-4F7D-BA2A-02DE33FA4EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CCD93EF-4122-4F7D-BA2A-02DE33FA4EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CCD93EF-4122-4F7D-BA2A-02DE33FA4EF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16702020-3B1A-44B6-813E-A8F09E2063AD}
 	EndGlobalSection
 EndGlobal
