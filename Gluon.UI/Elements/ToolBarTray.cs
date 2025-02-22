@@ -8,84 +8,72 @@ public static partial class UI
 {
     public static System.Windows.Controls.ToolBarTray WithBackground(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithOrientation(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Controls.Orientation> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.OrientationProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithIsLocked(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.IsLockedProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithStyle(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithOverridesDefaultStyle(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithUseLayoutRounding(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithDataContext(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithBindingGroup(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithLanguage(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithName(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithTag(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithInputScope(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.InputScopeProperty, value);
         return self;
     }
@@ -106,112 +94,96 @@ public static partial class UI
     
     public static System.Windows.Controls.ToolBarTray WithLayoutTransform(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithWidth(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithMinWidth(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithMaxWidth(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithHeight(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithMinHeight(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithMaxHeight(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithFlowDirection(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithMargin(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithHorizontalAlignment(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithVerticalAlignment(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithFocusVisualStyle(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithCursor(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithForceCursor(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithToolTip(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithContextMenu(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.ContextMenuProperty, value);
         return self;
     }
@@ -316,98 +288,84 @@ public static partial class UI
     
     public static System.Windows.Controls.ToolBarTray WithAllowDrop(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithRenderTransform(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithRenderTransformOrigin(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithOpacity(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithOpacityMask(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithBitmapEffect(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithEffect(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithBitmapEffectInput(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithCacheMode(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithUid(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithVisibility(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithClipToBounds(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithClip(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithSnapsToDevicePixels(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -421,14 +379,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ToolBarTray WithIsEnabled(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithIsHitTestVisible(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -442,14 +398,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ToolBarTray WithFocusable(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBarTray WithIsManipulationEnabled(this System.Windows.Controls.ToolBarTray self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBarTray.IsManipulationEnabledProperty, value);
         return self;
     }

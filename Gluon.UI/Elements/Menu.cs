@@ -8,28 +8,24 @@ public static partial class UI
 {
     public static System.Windows.Controls.Menu WithIsMainMenu(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.IsMainMenuProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithItemContainerTemplateSelector(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Controls.ItemContainerTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.ItemContainerTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithUsesItemContainerTemplate(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.UsesItemContainerTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithItemsSource(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Collections.IEnumerable> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.ItemsSourceProperty, value);
         return self;
     }
@@ -43,56 +39,48 @@ public static partial class UI
     
     public static System.Windows.Controls.Menu WithDisplayMemberPath(this System.Windows.Controls.Menu self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.DisplayMemberPathProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithItemTemplate(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.ItemTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithItemTemplateSelector(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.ItemTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithItemStringFormat(this System.Windows.Controls.Menu self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.ItemStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithItemBindingGroup(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.ItemBindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithItemContainerStyle(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.ItemContainerStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithItemContainerStyleSelector(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Controls.StyleSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.ItemContainerStyleSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithItemsPanel(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Controls.ItemsPanelTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.ItemsPanelProperty, value);
         return self;
     }
@@ -106,196 +94,168 @@ public static partial class UI
     
     public static System.Windows.Controls.Menu WithGroupStyleSelector(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Controls.GroupStyleSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.GroupStyleSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithAlternationCount(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.AlternationCountProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithIsTextSearchEnabled(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.IsTextSearchEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithIsTextSearchCaseSensitive(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.IsTextSearchCaseSensitiveProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithBorderBrush(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithBorderThickness(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithBackground(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithForeground(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithFontFamily(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithFontSize(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithFontStretch(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithFontStyle(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithFontWeight(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithHorizontalContentAlignment(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithVerticalContentAlignment(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithTabIndex(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithIsTabStop(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithPadding(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithTemplate(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithStyle(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithOverridesDefaultStyle(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithUseLayoutRounding(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithDataContext(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithBindingGroup(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithLanguage(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithName(this System.Windows.Controls.Menu self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithTag(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithInputScope(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.InputScopeProperty, value);
         return self;
     }
@@ -316,112 +276,96 @@ public static partial class UI
     
     public static System.Windows.Controls.Menu WithLayoutTransform(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithWidth(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithMinWidth(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithMaxWidth(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithHeight(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithMinHeight(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithMaxHeight(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithFlowDirection(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithMargin(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithHorizontalAlignment(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithVerticalAlignment(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithFocusVisualStyle(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithCursor(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithForceCursor(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithToolTip(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithContextMenu(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.ContextMenuProperty, value);
         return self;
     }
@@ -526,98 +470,84 @@ public static partial class UI
     
     public static System.Windows.Controls.Menu WithAllowDrop(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithRenderTransform(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithRenderTransformOrigin(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithOpacity(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithOpacityMask(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithBitmapEffect(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithEffect(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithBitmapEffectInput(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithCacheMode(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithUid(this System.Windows.Controls.Menu self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithVisibility(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithClipToBounds(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithClip(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithSnapsToDevicePixels(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -631,14 +561,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Menu WithIsEnabled(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithIsHitTestVisible(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -652,14 +580,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Menu WithFocusable(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Menu WithIsManipulationEnabled(this System.Windows.Controls.Menu self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Menu.IsManipulationEnabledProperty, value);
         return self;
     }

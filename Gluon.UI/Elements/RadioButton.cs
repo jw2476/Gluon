@@ -8,14 +8,12 @@ public static partial class UI
 {
     public static System.Windows.Controls.RadioButton WithGroupName(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.GroupNameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithIsChecked(this System.Windows.Controls.RadioButton self, out ReadWriteBinding<System.Nullable<System.Boolean>> value)
     {
-        
         var metadata = System.Windows.Controls.RadioButton.IsCheckedProperty.GetMetadata(typeof(System.Windows.Controls.Primitives.ToggleButton))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Nullable<System.Boolean>)metadata.DefaultValue);
@@ -23,30 +21,33 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.RadioButton WithIsChecked(this System.Windows.Controls.RadioButton self, out ReadWriteBinding<System.Nullable<System.Boolean>> value, System.Nullable<System.Boolean> initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.RadioButton.IsCheckedProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.RadioButton WithIsThreeState(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.IsThreeStateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithCommand(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Input.ICommand> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.CommandProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithCommandParameter(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.CommandParameterProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithCommandTarget(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.IInputElement> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.CommandTargetProperty, value);
         return self;
     }
@@ -60,14 +61,12 @@ public static partial class UI
     
     public static System.Windows.Controls.RadioButton WithClickMode(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Controls.ClickMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.ClickModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithContent(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.ContentProperty, value);
         return self;
     }
@@ -81,189 +80,162 @@ public static partial class UI
     
     public static System.Windows.Controls.RadioButton WithContentTemplate(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.ContentTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithContentTemplateSelector(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.ContentTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithContentStringFormat(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.ContentStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithBorderBrush(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithBorderThickness(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithBackground(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithForeground(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithFontFamily(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithFontSize(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithFontStretch(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithFontStyle(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithFontWeight(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithHorizontalContentAlignment(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithVerticalContentAlignment(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithTabIndex(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithIsTabStop(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithPadding(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithTemplate(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithStyle(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithOverridesDefaultStyle(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithUseLayoutRounding(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithDataContext(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithBindingGroup(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithLanguage(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithName(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithTag(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithInputScope(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.InputScopeProperty, value);
         return self;
     }
@@ -284,112 +256,96 @@ public static partial class UI
     
     public static System.Windows.Controls.RadioButton WithLayoutTransform(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithWidth(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithMinWidth(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithMaxWidth(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithHeight(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithMinHeight(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithMaxHeight(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithFlowDirection(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithMargin(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithHorizontalAlignment(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithVerticalAlignment(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithFocusVisualStyle(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithCursor(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithForceCursor(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithToolTip(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithContextMenu(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.ContextMenuProperty, value);
         return self;
     }
@@ -494,98 +450,84 @@ public static partial class UI
     
     public static System.Windows.Controls.RadioButton WithAllowDrop(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithRenderTransform(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithRenderTransformOrigin(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithOpacity(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithOpacityMask(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithBitmapEffect(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithEffect(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithBitmapEffectInput(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithCacheMode(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithUid(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithVisibility(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithClipToBounds(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithClip(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithSnapsToDevicePixels(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -599,14 +541,12 @@ public static partial class UI
     
     public static System.Windows.Controls.RadioButton WithIsEnabled(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithIsHitTestVisible(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -620,14 +560,12 @@ public static partial class UI
     
     public static System.Windows.Controls.RadioButton WithFocusable(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RadioButton WithIsManipulationEnabled(this System.Windows.Controls.RadioButton self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RadioButton.IsManipulationEnabledProperty, value);
         return self;
     }

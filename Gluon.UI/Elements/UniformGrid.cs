@@ -8,98 +8,84 @@ public static partial class UI
 {
     public static System.Windows.Controls.Primitives.UniformGrid WithFirstColumn(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.FirstColumnProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithColumns(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.ColumnsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithRows(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.RowsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithBackground(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithIsItemsHost(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.IsItemsHostProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithStyle(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithOverridesDefaultStyle(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithUseLayoutRounding(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithDataContext(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithBindingGroup(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithLanguage(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithName(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithTag(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithInputScope(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.InputScopeProperty, value);
         return self;
     }
@@ -120,112 +106,96 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.UniformGrid WithLayoutTransform(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithWidth(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithMinWidth(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithMaxWidth(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithHeight(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithMinHeight(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithMaxHeight(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithFlowDirection(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithMargin(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithHorizontalAlignment(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithVerticalAlignment(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithFocusVisualStyle(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithCursor(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithForceCursor(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithToolTip(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithContextMenu(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.ContextMenuProperty, value);
         return self;
     }
@@ -330,98 +300,84 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.UniformGrid WithAllowDrop(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithRenderTransform(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithRenderTransformOrigin(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithOpacity(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithOpacityMask(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithBitmapEffect(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithEffect(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithBitmapEffectInput(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithCacheMode(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithUid(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithVisibility(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithClipToBounds(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithClip(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithSnapsToDevicePixels(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -435,14 +391,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.UniformGrid WithIsEnabled(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithIsHitTestVisible(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -456,14 +410,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.UniformGrid WithFocusable(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.UniformGrid WithIsManipulationEnabled(this System.Windows.Controls.Primitives.UniformGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.UniformGrid.IsManipulationEnabledProperty, value);
         return self;
     }

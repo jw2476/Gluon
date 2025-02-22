@@ -8,14 +8,12 @@ public static partial class UI
 {
     public static System.Windows.Controls.Primitives.Popup WithChild(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.UIElement> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.ChildProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithIsOpen(this System.Windows.Controls.Primitives.Popup self, out ReadWriteBinding<System.Boolean> value)
     {
-        
         var metadata = System.Windows.Controls.Primitives.Popup.IsOpenProperty.GetMetadata(typeof(System.Windows.Controls.Primitives.Popup))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Boolean)metadata.DefaultValue);
@@ -23,65 +21,63 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.Primitives.Popup WithIsOpen(this System.Windows.Controls.Primitives.Popup self, out ReadWriteBinding<System.Boolean> value, System.Boolean initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.Primitives.Popup.IsOpenProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.Primitives.Popup WithPlacement(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Controls.Primitives.PlacementMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.PlacementProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithCustomPopupPlacementCallback(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Controls.Primitives.CustomPopupPlacementCallback> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithStaysOpen(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.StaysOpenProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithHorizontalOffset(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.HorizontalOffsetProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithVerticalOffset(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithPlacementTarget(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.UIElement> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.PlacementTargetProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithPlacementRectangle(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Rect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.PlacementRectangleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithPopupAnimation(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Controls.Primitives.PopupAnimation> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.PopupAnimationProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithAllowsTransparency(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.AllowsTransparencyProperty, value);
         return self;
     }
@@ -95,63 +91,54 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.Popup WithStyle(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithOverridesDefaultStyle(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithUseLayoutRounding(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithDataContext(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithBindingGroup(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithLanguage(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithName(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithTag(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithInputScope(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.InputScopeProperty, value);
         return self;
     }
@@ -172,112 +159,96 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.Popup WithLayoutTransform(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithWidth(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithMinWidth(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithMaxWidth(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithHeight(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithMinHeight(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithMaxHeight(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithFlowDirection(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithMargin(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithHorizontalAlignment(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithVerticalAlignment(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithFocusVisualStyle(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithCursor(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithForceCursor(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithToolTip(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithContextMenu(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.ContextMenuProperty, value);
         return self;
     }
@@ -382,98 +353,84 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.Popup WithAllowDrop(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithRenderTransform(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithRenderTransformOrigin(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithOpacity(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithOpacityMask(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithBitmapEffect(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithEffect(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithBitmapEffectInput(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithCacheMode(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithUid(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithVisibility(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithClipToBounds(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithClip(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithSnapsToDevicePixels(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -487,14 +444,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.Popup WithIsEnabled(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithIsHitTestVisible(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -508,14 +463,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.Popup WithFocusable(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.Popup WithIsManipulationEnabled(this System.Windows.Controls.Primitives.Popup self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.Popup.IsManipulationEnabledProperty, value);
         return self;
     }

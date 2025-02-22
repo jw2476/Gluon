@@ -8,98 +8,84 @@ public static partial class UI
 {
     public static System.Windows.Controls.RichTextBox WithIsDocumentEnabled(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.IsDocumentEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithIsReadOnly(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.IsReadOnlyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithIsReadOnlyCaretVisible(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.IsReadOnlyCaretVisibleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithAcceptsReturn(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.AcceptsReturnProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithAcceptsTab(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.AcceptsTabProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithHorizontalScrollBarVisibility(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Controls.ScrollBarVisibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.HorizontalScrollBarVisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithVerticalScrollBarVisibility(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Controls.ScrollBarVisibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.VerticalScrollBarVisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithIsUndoEnabled(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.IsUndoEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithUndoLimit(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.UndoLimitProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithAutoWordSelection(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.AutoWordSelectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithSelectionBrush(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.SelectionBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithSelectionTextBrush(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.SelectionTextBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithSelectionOpacity(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.SelectionOpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithCaretBrush(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.CaretBrushProperty, value);
         return self;
     }
@@ -113,175 +99,150 @@ public static partial class UI
     
     public static System.Windows.Controls.RichTextBox WithIsInactiveSelectionHighlightEnabled(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.IsInactiveSelectionHighlightEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithBorderBrush(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithBorderThickness(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithBackground(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithForeground(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithFontFamily(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithFontSize(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithFontStretch(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithFontStyle(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithFontWeight(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithHorizontalContentAlignment(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithVerticalContentAlignment(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithTabIndex(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithIsTabStop(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithPadding(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithTemplate(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithStyle(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithOverridesDefaultStyle(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithUseLayoutRounding(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithDataContext(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithBindingGroup(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithLanguage(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithName(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithTag(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithInputScope(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.InputScopeProperty, value);
         return self;
     }
@@ -302,112 +263,96 @@ public static partial class UI
     
     public static System.Windows.Controls.RichTextBox WithLayoutTransform(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithWidth(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithMinWidth(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithMaxWidth(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithHeight(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithMinHeight(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithMaxHeight(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithFlowDirection(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithMargin(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithHorizontalAlignment(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithVerticalAlignment(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithFocusVisualStyle(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithCursor(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithForceCursor(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithToolTip(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithContextMenu(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.ContextMenuProperty, value);
         return self;
     }
@@ -512,98 +457,84 @@ public static partial class UI
     
     public static System.Windows.Controls.RichTextBox WithAllowDrop(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithRenderTransform(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithRenderTransformOrigin(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithOpacity(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithOpacityMask(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithBitmapEffect(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithEffect(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithBitmapEffectInput(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithCacheMode(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithUid(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithVisibility(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithClipToBounds(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithClip(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithSnapsToDevicePixels(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -617,14 +548,12 @@ public static partial class UI
     
     public static System.Windows.Controls.RichTextBox WithIsEnabled(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithIsHitTestVisible(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -638,14 +567,12 @@ public static partial class UI
     
     public static System.Windows.Controls.RichTextBox WithFocusable(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.RichTextBox WithIsManipulationEnabled(this System.Windows.Controls.RichTextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.RichTextBox.IsManipulationEnabledProperty, value);
         return self;
     }

@@ -8,84 +8,72 @@ public static partial class UI
 {
     public static System.Windows.Controls.Slider WithOrientation(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Controls.Orientation> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.OrientationProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithIsDirectionReversed(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.IsDirectionReversedProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithDelay(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.DelayProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithInterval(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.IntervalProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithAutoToolTipPlacement(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Controls.Primitives.AutoToolTipPlacement> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.AutoToolTipPlacementProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithAutoToolTipPrecision(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.AutoToolTipPrecisionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithIsSnapToTickEnabled(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.IsSnapToTickEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithTickPlacement(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Controls.Primitives.TickPlacement> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.TickPlacementProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithTickFrequency(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.TickFrequencyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithTicks(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Media.DoubleCollection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.TicksProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithIsSelectionRangeEnabled(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.IsSelectionRangeEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithSelectionStart(this System.Windows.Controls.Slider self, out ReadWriteBinding<System.Double> value)
     {
-        
         var metadata = System.Windows.Controls.Slider.SelectionStartProperty.GetMetadata(typeof(System.Windows.Controls.Slider))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Double)metadata.DefaultValue);
@@ -93,9 +81,15 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.Slider WithSelectionStart(this System.Windows.Controls.Slider self, out ReadWriteBinding<System.Double> value, System.Double initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.Slider.SelectionStartProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.Slider WithSelectionEnd(this System.Windows.Controls.Slider self, out ReadWriteBinding<System.Double> value)
     {
-        
         var metadata = System.Windows.Controls.Slider.SelectionEndProperty.GetMetadata(typeof(System.Windows.Controls.Slider))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Double)metadata.DefaultValue);
@@ -103,30 +97,33 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.Slider WithSelectionEnd(this System.Windows.Controls.Slider self, out ReadWriteBinding<System.Double> value, System.Double initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.Slider.SelectionEndProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.Slider WithIsMoveToPointEnabled(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.IsMoveToPointEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithMinimum(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.MinimumProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithMaximum(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.MaximumProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithValue(this System.Windows.Controls.Slider self, out ReadWriteBinding<System.Double> value)
     {
-        
         var metadata = System.Windows.Controls.Slider.ValueProperty.GetMetadata(typeof(System.Windows.Controls.Primitives.RangeBase))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Double)metadata.DefaultValue);
@@ -134,184 +131,165 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.Slider WithValue(this System.Windows.Controls.Slider self, out ReadWriteBinding<System.Double> value, System.Double initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.Slider.ValueProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.Slider WithLargeChange(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.LargeChangeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithSmallChange(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.SmallChangeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithBorderBrush(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithBorderThickness(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithBackground(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithForeground(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithFontFamily(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithFontSize(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithFontStretch(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithFontStyle(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithFontWeight(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithHorizontalContentAlignment(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithVerticalContentAlignment(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithTabIndex(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithIsTabStop(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithPadding(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithTemplate(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithStyle(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithOverridesDefaultStyle(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithUseLayoutRounding(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithDataContext(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithBindingGroup(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithLanguage(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithName(this System.Windows.Controls.Slider self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithTag(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithInputScope(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.InputScopeProperty, value);
         return self;
     }
@@ -332,112 +310,96 @@ public static partial class UI
     
     public static System.Windows.Controls.Slider WithLayoutTransform(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithWidth(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithMinWidth(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithMaxWidth(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithHeight(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithMinHeight(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithMaxHeight(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithFlowDirection(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithMargin(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithHorizontalAlignment(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithVerticalAlignment(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithFocusVisualStyle(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithCursor(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithForceCursor(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithToolTip(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithContextMenu(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.ContextMenuProperty, value);
         return self;
     }
@@ -542,98 +504,84 @@ public static partial class UI
     
     public static System.Windows.Controls.Slider WithAllowDrop(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithRenderTransform(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithRenderTransformOrigin(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithOpacity(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithOpacityMask(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithBitmapEffect(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithEffect(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithBitmapEffectInput(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithCacheMode(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithUid(this System.Windows.Controls.Slider self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithVisibility(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithClipToBounds(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithClip(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithSnapsToDevicePixels(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -647,14 +595,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Slider WithIsEnabled(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithIsHitTestVisible(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -668,14 +614,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Slider WithFocusable(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Slider WithIsManipulationEnabled(this System.Windows.Controls.Slider self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Slider.IsManipulationEnabledProperty, value);
         return self;
     }

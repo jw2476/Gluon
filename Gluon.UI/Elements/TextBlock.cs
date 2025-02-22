@@ -8,189 +8,162 @@ public static partial class UI
 {
     public static System.Windows.Controls.TextBlock WithBaselineOffset(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.BaselineOffsetProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithText(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.TextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithFontFamily(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithFontStyle(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithFontWeight(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithFontStretch(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithFontSize(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithForeground(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithBackground(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithTextDecorations(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.TextDecorationCollection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.TextDecorationsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithTextEffects(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Media.TextEffectCollection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.TextEffectsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithLineHeight(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.LineHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithLineStackingStrategy(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.LineStackingStrategy> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.LineStackingStrategyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithPadding(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithTextAlignment(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.TextAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.TextAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithTextTrimming(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.TextTrimming> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.TextTrimmingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithTextWrapping(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.TextWrapping> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.TextWrappingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithIsHyphenationEnabled(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.IsHyphenationEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithStyle(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithOverridesDefaultStyle(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithUseLayoutRounding(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithDataContext(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithBindingGroup(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithLanguage(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithName(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithTag(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithInputScope(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.InputScopeProperty, value);
         return self;
     }
@@ -211,112 +184,96 @@ public static partial class UI
     
     public static System.Windows.Controls.TextBlock WithLayoutTransform(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithWidth(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithMinWidth(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithMaxWidth(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithHeight(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithMinHeight(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithMaxHeight(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithFlowDirection(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithMargin(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithHorizontalAlignment(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithVerticalAlignment(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithFocusVisualStyle(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithCursor(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithForceCursor(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithToolTip(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithContextMenu(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.ContextMenuProperty, value);
         return self;
     }
@@ -421,98 +378,84 @@ public static partial class UI
     
     public static System.Windows.Controls.TextBlock WithAllowDrop(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithRenderTransform(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithRenderTransformOrigin(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithOpacity(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithOpacityMask(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithBitmapEffect(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithEffect(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithBitmapEffectInput(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithCacheMode(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithUid(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithVisibility(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithClipToBounds(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithClip(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithSnapsToDevicePixels(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -526,14 +469,12 @@ public static partial class UI
     
     public static System.Windows.Controls.TextBlock WithIsEnabled(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithIsHitTestVisible(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -547,14 +488,12 @@ public static partial class UI
     
     public static System.Windows.Controls.TextBlock WithFocusable(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBlock WithIsManipulationEnabled(this System.Windows.Controls.TextBlock self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBlock.IsManipulationEnabledProperty, value);
         return self;
     }

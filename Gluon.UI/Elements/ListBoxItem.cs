@@ -8,7 +8,6 @@ public static partial class UI
 {
     public static System.Windows.Controls.ListBoxItem WithIsSelected(this System.Windows.Controls.ListBoxItem self, out ReadWriteBinding<System.Boolean> value)
     {
-        
         var metadata = System.Windows.Controls.ListBoxItem.IsSelectedProperty.GetMetadata(typeof(System.Windows.Controls.ListBoxItem))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Boolean)metadata.DefaultValue);
@@ -16,9 +15,15 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.ListBoxItem WithIsSelected(this System.Windows.Controls.ListBoxItem self, out ReadWriteBinding<System.Boolean> value, System.Boolean initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.ListBoxItem.IsSelectedProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.ListBoxItem WithContent(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.ContentProperty, value);
         return self;
     }
@@ -32,189 +37,162 @@ public static partial class UI
     
     public static System.Windows.Controls.ListBoxItem WithContentTemplate(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.ContentTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithContentTemplateSelector(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.ContentTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithContentStringFormat(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.ContentStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithBorderBrush(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithBorderThickness(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithBackground(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithForeground(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithFontFamily(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithFontSize(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithFontStretch(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithFontStyle(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithFontWeight(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithHorizontalContentAlignment(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithVerticalContentAlignment(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithTabIndex(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithIsTabStop(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithPadding(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithTemplate(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithStyle(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithOverridesDefaultStyle(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithUseLayoutRounding(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithDataContext(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithBindingGroup(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithLanguage(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithName(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithTag(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithInputScope(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.InputScopeProperty, value);
         return self;
     }
@@ -235,112 +213,96 @@ public static partial class UI
     
     public static System.Windows.Controls.ListBoxItem WithLayoutTransform(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithWidth(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithMinWidth(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithMaxWidth(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithHeight(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithMinHeight(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithMaxHeight(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithFlowDirection(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithMargin(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithHorizontalAlignment(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithVerticalAlignment(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithFocusVisualStyle(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithCursor(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithForceCursor(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithToolTip(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithContextMenu(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.ContextMenuProperty, value);
         return self;
     }
@@ -445,98 +407,84 @@ public static partial class UI
     
     public static System.Windows.Controls.ListBoxItem WithAllowDrop(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithRenderTransform(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithRenderTransformOrigin(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithOpacity(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithOpacityMask(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithBitmapEffect(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithEffect(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithBitmapEffectInput(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithCacheMode(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithUid(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithVisibility(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithClipToBounds(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithClip(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithSnapsToDevicePixels(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -550,14 +498,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ListBoxItem WithIsEnabled(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithIsHitTestVisible(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -571,14 +517,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ListBoxItem WithFocusable(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListBoxItem WithIsManipulationEnabled(this System.Windows.Controls.ListBoxItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListBoxItem.IsManipulationEnabledProperty, value);
         return self;
     }

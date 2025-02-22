@@ -8,77 +8,66 @@ public static partial class UI
 {
     public static System.Windows.Controls.Viewbox WithStretch(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Media.Stretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.StretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithStretchDirection(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Controls.StretchDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.StretchDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithStyle(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithOverridesDefaultStyle(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithUseLayoutRounding(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithDataContext(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithBindingGroup(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithLanguage(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithName(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithTag(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithInputScope(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.InputScopeProperty, value);
         return self;
     }
@@ -99,112 +88,96 @@ public static partial class UI
     
     public static System.Windows.Controls.Viewbox WithLayoutTransform(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithWidth(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithMinWidth(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithMaxWidth(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithHeight(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithMinHeight(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithMaxHeight(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithFlowDirection(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithMargin(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithHorizontalAlignment(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithVerticalAlignment(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithFocusVisualStyle(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithCursor(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithForceCursor(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithToolTip(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithContextMenu(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.ContextMenuProperty, value);
         return self;
     }
@@ -309,98 +282,84 @@ public static partial class UI
     
     public static System.Windows.Controls.Viewbox WithAllowDrop(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithRenderTransform(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithRenderTransformOrigin(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithOpacity(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithOpacityMask(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithBitmapEffect(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithEffect(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithBitmapEffectInput(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithCacheMode(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithUid(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithVisibility(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithClipToBounds(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithClip(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithSnapsToDevicePixels(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -414,14 +373,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Viewbox WithIsEnabled(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithIsHitTestVisible(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -435,14 +392,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Viewbox WithFocusable(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Viewbox WithIsManipulationEnabled(this System.Windows.Controls.Viewbox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Viewbox.IsManipulationEnabledProperty, value);
         return self;
     }

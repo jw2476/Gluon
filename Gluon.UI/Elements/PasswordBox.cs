@@ -8,42 +8,36 @@ public static partial class UI
 {
     public static System.Windows.Controls.PasswordBox WithPasswordChar(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Char> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.PasswordCharProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithMaxLength(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.MaxLengthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithSelectionBrush(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.SelectionBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithSelectionTextBrush(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.SelectionTextBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithSelectionOpacity(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.SelectionOpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithCaretBrush(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.CaretBrushProperty, value);
         return self;
     }
@@ -57,175 +51,150 @@ public static partial class UI
     
     public static System.Windows.Controls.PasswordBox WithIsInactiveSelectionHighlightEnabled(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.IsInactiveSelectionHighlightEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithBorderBrush(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithBorderThickness(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithBackground(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithForeground(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithFontFamily(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithFontSize(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithFontStretch(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithFontStyle(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithFontWeight(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithHorizontalContentAlignment(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithVerticalContentAlignment(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithTabIndex(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithIsTabStop(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithPadding(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithTemplate(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithStyle(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithOverridesDefaultStyle(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithUseLayoutRounding(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithDataContext(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithBindingGroup(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithLanguage(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithName(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithTag(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithInputScope(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.InputScopeProperty, value);
         return self;
     }
@@ -246,112 +215,96 @@ public static partial class UI
     
     public static System.Windows.Controls.PasswordBox WithLayoutTransform(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithWidth(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithMinWidth(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithMaxWidth(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithHeight(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithMinHeight(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithMaxHeight(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithFlowDirection(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithMargin(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithHorizontalAlignment(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithVerticalAlignment(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithFocusVisualStyle(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithCursor(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithForceCursor(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithToolTip(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithContextMenu(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.ContextMenuProperty, value);
         return self;
     }
@@ -456,98 +409,84 @@ public static partial class UI
     
     public static System.Windows.Controls.PasswordBox WithAllowDrop(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithRenderTransform(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithRenderTransformOrigin(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithOpacity(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithOpacityMask(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithBitmapEffect(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithEffect(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithBitmapEffectInput(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithCacheMode(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithUid(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithVisibility(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithClipToBounds(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithClip(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithSnapsToDevicePixels(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -561,14 +500,12 @@ public static partial class UI
     
     public static System.Windows.Controls.PasswordBox WithIsEnabled(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithIsHitTestVisible(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -582,14 +519,12 @@ public static partial class UI
     
     public static System.Windows.Controls.PasswordBox WithFocusable(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.PasswordBox WithIsManipulationEnabled(this System.Windows.Controls.PasswordBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.PasswordBox.IsManipulationEnabledProperty, value);
         return self;
     }

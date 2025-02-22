@@ -8,105 +8,90 @@ public static partial class UI
 {
     public static System.Windows.Controls.DataGrid WithCanUserResizeColumns(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.CanUserResizeColumnsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithColumnWidth(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.DataGridLength> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ColumnWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithMinColumnWidth(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.MinColumnWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithMaxColumnWidth(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.MaxColumnWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithGridLinesVisibility(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.DataGridGridLinesVisibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.GridLinesVisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithHorizontalGridLinesBrush(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.HorizontalGridLinesBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithVerticalGridLinesBrush(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.VerticalGridLinesBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithRowStyle(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.RowStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithRowValidationErrorTemplate(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.RowValidationErrorTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithRowStyleSelector(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.StyleSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.RowStyleSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithRowBackground(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.RowBackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithAlternatingRowBackground(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.AlternatingRowBackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithRowHeight(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.RowHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithMinRowHeight(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.MinRowHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithRowHeaderWidth(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.RowHeaderWidthProperty, value);
         return self;
     }
@@ -120,140 +105,120 @@ public static partial class UI
     
     public static System.Windows.Controls.DataGrid WithColumnHeaderHeight(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ColumnHeaderHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithHeadersVisibility(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.DataGridHeadersVisibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.HeadersVisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithCellStyle(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.CellStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithColumnHeaderStyle(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ColumnHeaderStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithRowHeaderStyle(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.RowHeaderStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithRowHeaderTemplate(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.RowHeaderTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithRowHeaderTemplateSelector(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.RowHeaderTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithHorizontalScrollBarVisibility(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.ScrollBarVisibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.HorizontalScrollBarVisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithVerticalScrollBarVisibility(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.ScrollBarVisibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.VerticalScrollBarVisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithIsReadOnly(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.IsReadOnlyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithCurrentItem(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.CurrentItemProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithCurrentColumn(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.DataGridColumn> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.CurrentColumnProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithCurrentCell(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.DataGridCellInfo> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.CurrentCellProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithCanUserAddRows(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.CanUserAddRowsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithCanUserDeleteRows(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.CanUserDeleteRowsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithRowDetailsVisibilityMode(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.DataGridRowDetailsVisibilityMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.RowDetailsVisibilityModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithAreRowDetailsFrozen(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.AreRowDetailsFrozenProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithRowDetailsTemplate(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.RowDetailsTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithRowDetailsTemplateSelector(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.RowDetailsTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithCanUserResizeRows(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.CanUserResizeRowsProperty, value);
         return self;
     }
@@ -267,35 +232,30 @@ public static partial class UI
     
     public static System.Windows.Controls.DataGrid WithSelectionMode(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.DataGridSelectionMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.SelectionModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithSelectionUnit(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.DataGridSelectionUnit> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.SelectionUnitProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithCanUserSortColumns(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.CanUserSortColumnsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithAutoGenerateColumns(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.AutoGenerateColumnsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithFrozenColumnCount(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.FrozenColumnCountProperty, value);
         return self;
     }
@@ -309,42 +269,36 @@ public static partial class UI
     
     public static System.Windows.Controls.DataGrid WithEnableRowVirtualization(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.EnableRowVirtualizationProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithEnableColumnVirtualization(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.EnableColumnVirtualizationProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithCanUserReorderColumns(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.CanUserReorderColumnsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithDragIndicatorStyle(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.DragIndicatorStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithDropLocationIndicatorStyle(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.DropLocationIndicatorStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithClipboardCopyMode(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.DataGridClipboardCopyMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ClipboardCopyModeProperty, value);
         return self;
     }
@@ -358,14 +312,12 @@ public static partial class UI
     
     public static System.Windows.Controls.DataGrid WithIsSynchronizedWithCurrentItem(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Nullable<System.Boolean>> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.IsSynchronizedWithCurrentItemProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithSelectedIndex(this System.Windows.Controls.DataGrid self, out ReadWriteBinding<System.Int32> value)
     {
-        
         var metadata = System.Windows.Controls.DataGrid.SelectedIndexProperty.GetMetadata(typeof(System.Windows.Controls.Primitives.Selector))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Int32)metadata.DefaultValue);
@@ -373,9 +325,15 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.DataGrid WithSelectedIndex(this System.Windows.Controls.DataGrid self, out ReadWriteBinding<System.Int32> value, System.Int32 initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.DataGrid.SelectedIndexProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.DataGrid WithSelectedItem(this System.Windows.Controls.DataGrid self, out ReadWriteBinding<System.Object> value)
     {
-        
         var metadata = System.Windows.Controls.DataGrid.SelectedItemProperty.GetMetadata(typeof(System.Windows.Controls.Primitives.Selector))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Object)metadata.DefaultValue);
@@ -383,9 +341,15 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.DataGrid WithSelectedItem(this System.Windows.Controls.DataGrid self, out ReadWriteBinding<System.Object> value, System.Object initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.DataGrid.SelectedItemProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.DataGrid WithSelectedValue(this System.Windows.Controls.DataGrid self, out ReadWriteBinding<System.Object> value)
     {
-        
         var metadata = System.Windows.Controls.DataGrid.SelectedValueProperty.GetMetadata(typeof(System.Windows.Controls.Primitives.Selector))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Object)metadata.DefaultValue);
@@ -393,16 +357,21 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.DataGrid WithSelectedValue(this System.Windows.Controls.DataGrid self, out ReadWriteBinding<System.Object> value, System.Object initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.DataGrid.SelectedValueProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.DataGrid WithSelectedValuePath(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.SelectedValuePathProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithItemsSource(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Collections.IEnumerable> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ItemsSourceProperty, value);
         return self;
     }
@@ -416,56 +385,48 @@ public static partial class UI
     
     public static System.Windows.Controls.DataGrid WithDisplayMemberPath(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.DisplayMemberPathProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithItemTemplate(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ItemTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithItemTemplateSelector(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ItemTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithItemStringFormat(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ItemStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithItemBindingGroup(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ItemBindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithItemContainerStyle(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ItemContainerStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithItemContainerStyleSelector(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.StyleSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ItemContainerStyleSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithItemsPanel(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.ItemsPanelTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ItemsPanelProperty, value);
         return self;
     }
@@ -479,196 +440,168 @@ public static partial class UI
     
     public static System.Windows.Controls.DataGrid WithGroupStyleSelector(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.GroupStyleSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.GroupStyleSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithAlternationCount(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.AlternationCountProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithIsTextSearchEnabled(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.IsTextSearchEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithIsTextSearchCaseSensitive(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.IsTextSearchCaseSensitiveProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithBorderBrush(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithBorderThickness(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithBackground(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithForeground(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithFontFamily(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithFontSize(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithFontStretch(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithFontStyle(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithFontWeight(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithHorizontalContentAlignment(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithVerticalContentAlignment(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithTabIndex(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithIsTabStop(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithPadding(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithTemplate(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithStyle(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithOverridesDefaultStyle(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithUseLayoutRounding(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithDataContext(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithBindingGroup(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithLanguage(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithName(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithTag(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithInputScope(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.InputScopeProperty, value);
         return self;
     }
@@ -689,112 +622,96 @@ public static partial class UI
     
     public static System.Windows.Controls.DataGrid WithLayoutTransform(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithWidth(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithMinWidth(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithMaxWidth(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithHeight(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithMinHeight(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithMaxHeight(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithFlowDirection(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithMargin(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithHorizontalAlignment(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithVerticalAlignment(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithFocusVisualStyle(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithCursor(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithForceCursor(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithToolTip(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithContextMenu(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ContextMenuProperty, value);
         return self;
     }
@@ -899,98 +816,84 @@ public static partial class UI
     
     public static System.Windows.Controls.DataGrid WithAllowDrop(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithRenderTransform(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithRenderTransformOrigin(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithOpacity(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithOpacityMask(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithBitmapEffect(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithEffect(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithBitmapEffectInput(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithCacheMode(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithUid(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithVisibility(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithClipToBounds(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithClip(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithSnapsToDevicePixels(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -1004,14 +907,12 @@ public static partial class UI
     
     public static System.Windows.Controls.DataGrid WithIsEnabled(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithIsHitTestVisible(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -1025,14 +926,12 @@ public static partial class UI
     
     public static System.Windows.Controls.DataGrid WithFocusable(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DataGrid WithIsManipulationEnabled(this System.Windows.Controls.DataGrid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DataGrid.IsManipulationEnabledProperty, value);
         return self;
     }

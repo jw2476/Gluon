@@ -8,98 +8,84 @@ public static partial class UI
 {
     public static System.Windows.Controls.DockPanel WithLastChildFill(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.LastChildFillProperty, value);
         return self;
     }
     
     public static System.Windows.FrameworkElement WithDock(this System.Windows.FrameworkElement self, ReadWriteBinding<System.Windows.Controls.Dock> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.DockProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithBackground(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithIsItemsHost(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.IsItemsHostProperty, value);
         return self;
     }
     
     public static System.Windows.FrameworkElement WithZIndex(this System.Windows.FrameworkElement self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.ZIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithStyle(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithOverridesDefaultStyle(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithUseLayoutRounding(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithDataContext(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithBindingGroup(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithLanguage(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithName(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithTag(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithInputScope(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.InputScopeProperty, value);
         return self;
     }
@@ -120,112 +106,96 @@ public static partial class UI
     
     public static System.Windows.Controls.DockPanel WithLayoutTransform(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithWidth(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithMinWidth(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithMaxWidth(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithHeight(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithMinHeight(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithMaxHeight(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithFlowDirection(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithMargin(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithHorizontalAlignment(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithVerticalAlignment(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithFocusVisualStyle(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithCursor(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithForceCursor(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithToolTip(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithContextMenu(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.ContextMenuProperty, value);
         return self;
     }
@@ -330,98 +300,84 @@ public static partial class UI
     
     public static System.Windows.Controls.DockPanel WithAllowDrop(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithRenderTransform(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithRenderTransformOrigin(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithOpacity(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithOpacityMask(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithBitmapEffect(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithEffect(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithBitmapEffectInput(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithCacheMode(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithUid(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithVisibility(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithClipToBounds(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithClip(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithSnapsToDevicePixels(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -435,14 +391,12 @@ public static partial class UI
     
     public static System.Windows.Controls.DockPanel WithIsEnabled(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithIsHitTestVisible(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -456,14 +410,12 @@ public static partial class UI
     
     public static System.Windows.Controls.DockPanel WithFocusable(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.DockPanel WithIsManipulationEnabled(this System.Windows.Controls.DockPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.DockPanel.IsManipulationEnabledProperty, value);
         return self;
     }

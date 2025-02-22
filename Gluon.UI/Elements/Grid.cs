@@ -8,119 +8,102 @@ public static partial class UI
 {
     public static System.Windows.Controls.Grid WithShowGridLines(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.ShowGridLinesProperty, value);
         return self;
     }
     
     public static System.Windows.FrameworkElement WithColumn(this System.Windows.FrameworkElement self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.ColumnProperty, value);
         return self;
     }
     
     public static System.Windows.FrameworkElement WithRow(this System.Windows.FrameworkElement self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.RowProperty, value);
         return self;
     }
     
     public static System.Windows.FrameworkElement WithColumnSpan(this System.Windows.FrameworkElement self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.ColumnSpanProperty, value);
         return self;
     }
     
     public static System.Windows.FrameworkElement WithRowSpan(this System.Windows.FrameworkElement self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.RowSpanProperty, value);
         return self;
     }
     
     public static System.Windows.FrameworkElement WithIsSharedSizeScope(this System.Windows.FrameworkElement self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.IsSharedSizeScopeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithBackground(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithIsItemsHost(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.IsItemsHostProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithStyle(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithOverridesDefaultStyle(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithUseLayoutRounding(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithDataContext(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithBindingGroup(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithLanguage(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithName(this System.Windows.Controls.Grid self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithTag(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithInputScope(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.InputScopeProperty, value);
         return self;
     }
@@ -141,112 +124,96 @@ public static partial class UI
     
     public static System.Windows.Controls.Grid WithLayoutTransform(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithWidth(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithMinWidth(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithMaxWidth(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithHeight(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithMinHeight(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithMaxHeight(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithFlowDirection(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithMargin(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithHorizontalAlignment(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithVerticalAlignment(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithFocusVisualStyle(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithCursor(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithForceCursor(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithToolTip(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithContextMenu(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.ContextMenuProperty, value);
         return self;
     }
@@ -351,98 +318,84 @@ public static partial class UI
     
     public static System.Windows.Controls.Grid WithAllowDrop(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithRenderTransform(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithRenderTransformOrigin(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithOpacity(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithOpacityMask(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithBitmapEffect(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithEffect(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithBitmapEffectInput(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithCacheMode(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithUid(this System.Windows.Controls.Grid self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithVisibility(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithClipToBounds(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithClip(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithSnapsToDevicePixels(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -456,14 +409,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Grid WithIsEnabled(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithIsHitTestVisible(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -477,14 +428,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Grid WithFocusable(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Grid WithIsManipulationEnabled(this System.Windows.Controls.Grid self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Grid.IsManipulationEnabledProperty, value);
         return self;
     }

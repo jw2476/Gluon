@@ -8,21 +8,18 @@ public static partial class UI
 {
     public static System.Windows.Controls.ScrollViewer WithCanContentScroll(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.CanContentScrollProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithHorizontalScrollBarVisibility(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Controls.ScrollBarVisibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithVerticalScrollBarVisibility(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Controls.ScrollBarVisibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, value);
         return self;
     }
@@ -113,35 +110,30 @@ public static partial class UI
     
     public static System.Windows.Controls.ScrollViewer WithIsDeferredScrollingEnabled(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithPanningMode(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Controls.PanningMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.PanningModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithPanningDeceleration(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.PanningDecelerationProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithPanningRatio(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.PanningRatioProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithContent(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.ContentProperty, value);
         return self;
     }
@@ -155,189 +147,162 @@ public static partial class UI
     
     public static System.Windows.Controls.ScrollViewer WithContentTemplate(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.ContentTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithContentTemplateSelector(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.ContentTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithContentStringFormat(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.ContentStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithBorderBrush(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithBorderThickness(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithBackground(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithForeground(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithFontFamily(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithFontSize(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithFontStretch(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithFontStyle(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithFontWeight(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithHorizontalContentAlignment(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithVerticalContentAlignment(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithTabIndex(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithIsTabStop(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithPadding(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithTemplate(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithStyle(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithOverridesDefaultStyle(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithUseLayoutRounding(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithDataContext(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithBindingGroup(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithLanguage(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithName(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithTag(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithInputScope(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.InputScopeProperty, value);
         return self;
     }
@@ -358,112 +323,96 @@ public static partial class UI
     
     public static System.Windows.Controls.ScrollViewer WithLayoutTransform(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithWidth(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithMinWidth(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithMaxWidth(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithHeight(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithMinHeight(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithMaxHeight(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithFlowDirection(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithMargin(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithHorizontalAlignment(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithVerticalAlignment(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithFocusVisualStyle(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithCursor(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithForceCursor(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithToolTip(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithContextMenu(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.ContextMenuProperty, value);
         return self;
     }
@@ -568,98 +517,84 @@ public static partial class UI
     
     public static System.Windows.Controls.ScrollViewer WithAllowDrop(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithRenderTransform(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithRenderTransformOrigin(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithOpacity(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithOpacityMask(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithBitmapEffect(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithEffect(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithBitmapEffectInput(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithCacheMode(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithUid(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithVisibility(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithClipToBounds(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithClip(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithSnapsToDevicePixels(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -673,14 +608,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ScrollViewer WithIsEnabled(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithIsHitTestVisible(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -694,14 +627,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ScrollViewer WithFocusable(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ScrollViewer WithIsManipulationEnabled(this System.Windows.Controls.ScrollViewer self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ScrollViewer.IsManipulationEnabledProperty, value);
         return self;
     }

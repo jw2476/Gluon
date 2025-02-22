@@ -8,35 +8,30 @@ public static partial class UI
 {
     public static System.Windows.Controls.ProgressBar WithIsIndeterminate(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.IsIndeterminateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithOrientation(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Controls.Orientation> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.OrientationProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithMinimum(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.MinimumProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithMaximum(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.MaximumProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithValue(this System.Windows.Controls.ProgressBar self, out ReadWriteBinding<System.Double> value)
     {
-        
         var metadata = System.Windows.Controls.ProgressBar.ValueProperty.GetMetadata(typeof(System.Windows.Controls.Primitives.RangeBase))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Double)metadata.DefaultValue);
@@ -44,184 +39,165 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.ProgressBar WithValue(this System.Windows.Controls.ProgressBar self, out ReadWriteBinding<System.Double> value, System.Double initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.ProgressBar.ValueProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.ProgressBar WithLargeChange(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.LargeChangeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithSmallChange(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.SmallChangeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithBorderBrush(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithBorderThickness(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithBackground(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithForeground(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithFontFamily(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithFontSize(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithFontStretch(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithFontStyle(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithFontWeight(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithHorizontalContentAlignment(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithVerticalContentAlignment(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithTabIndex(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithIsTabStop(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithPadding(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithTemplate(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithStyle(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithOverridesDefaultStyle(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithUseLayoutRounding(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithDataContext(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithBindingGroup(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithLanguage(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithName(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithTag(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithInputScope(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.InputScopeProperty, value);
         return self;
     }
@@ -242,112 +218,96 @@ public static partial class UI
     
     public static System.Windows.Controls.ProgressBar WithLayoutTransform(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithWidth(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithMinWidth(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithMaxWidth(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithHeight(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithMinHeight(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithMaxHeight(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithFlowDirection(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithMargin(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithHorizontalAlignment(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithVerticalAlignment(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithFocusVisualStyle(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithCursor(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithForceCursor(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithToolTip(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithContextMenu(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.ContextMenuProperty, value);
         return self;
     }
@@ -452,98 +412,84 @@ public static partial class UI
     
     public static System.Windows.Controls.ProgressBar WithAllowDrop(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithRenderTransform(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithRenderTransformOrigin(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithOpacity(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithOpacityMask(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithBitmapEffect(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithEffect(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithBitmapEffectInput(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithCacheMode(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithUid(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithVisibility(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithClipToBounds(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithClip(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithSnapsToDevicePixels(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -557,14 +503,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ProgressBar WithIsEnabled(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithIsHitTestVisible(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -578,14 +522,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ProgressBar WithFocusable(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ProgressBar WithIsManipulationEnabled(this System.Windows.Controls.ProgressBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ProgressBar.IsManipulationEnabledProperty, value);
         return self;
     }

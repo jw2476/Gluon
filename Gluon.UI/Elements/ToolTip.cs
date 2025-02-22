@@ -8,21 +8,18 @@ public static partial class UI
 {
     public static System.Windows.Controls.ToolTip WithHorizontalOffset(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.HorizontalOffsetProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithVerticalOffset(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.VerticalOffsetProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithIsOpen(this System.Windows.Controls.ToolTip self, out ReadWriteBinding<System.Boolean> value)
     {
-        
         var metadata = System.Windows.Controls.ToolTip.IsOpenProperty.GetMetadata(typeof(System.Windows.Controls.ToolTip))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Boolean)metadata.DefaultValue);
@@ -30,58 +27,57 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.ToolTip WithIsOpen(this System.Windows.Controls.ToolTip self, out ReadWriteBinding<System.Boolean> value, System.Boolean initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.ToolTip.IsOpenProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.ToolTip WithHasDropShadow(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.HasDropShadowProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithPlacementTarget(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.UIElement> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.PlacementTargetProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithPlacementRectangle(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Rect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.PlacementRectangleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithPlacement(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Controls.Primitives.PlacementMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.PlacementProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithCustomPopupPlacementCallback(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Controls.Primitives.CustomPopupPlacementCallback> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.CustomPopupPlacementCallbackProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithStaysOpen(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.StaysOpenProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithShowsToolTipOnKeyboardFocus(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Nullable<System.Boolean>> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.ShowsToolTipOnKeyboardFocusProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithContent(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.ContentProperty, value);
         return self;
     }
@@ -95,189 +91,162 @@ public static partial class UI
     
     public static System.Windows.Controls.ToolTip WithContentTemplate(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.ContentTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithContentTemplateSelector(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.ContentTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithContentStringFormat(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.ContentStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithBorderBrush(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithBorderThickness(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithBackground(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithForeground(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithFontFamily(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithFontSize(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithFontStretch(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithFontStyle(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithFontWeight(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithHorizontalContentAlignment(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithVerticalContentAlignment(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithTabIndex(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithIsTabStop(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithPadding(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithTemplate(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithStyle(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithOverridesDefaultStyle(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithUseLayoutRounding(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithDataContext(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithBindingGroup(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithLanguage(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithName(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithTag(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithInputScope(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.InputScopeProperty, value);
         return self;
     }
@@ -298,112 +267,96 @@ public static partial class UI
     
     public static System.Windows.Controls.ToolTip WithLayoutTransform(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithWidth(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithMinWidth(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithMaxWidth(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithHeight(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithMinHeight(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithMaxHeight(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithFlowDirection(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithMargin(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithHorizontalAlignment(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithVerticalAlignment(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithFocusVisualStyle(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithCursor(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithForceCursor(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithToolTip(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithContextMenu(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.ContextMenuProperty, value);
         return self;
     }
@@ -508,98 +461,84 @@ public static partial class UI
     
     public static System.Windows.Controls.ToolTip WithAllowDrop(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithRenderTransform(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithRenderTransformOrigin(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithOpacity(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithOpacityMask(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithBitmapEffect(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithEffect(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithBitmapEffectInput(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithCacheMode(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithUid(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithVisibility(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithClipToBounds(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithClip(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithSnapsToDevicePixels(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -613,14 +552,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ToolTip WithIsEnabled(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithIsHitTestVisible(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -634,14 +571,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ToolTip WithFocusable(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolTip WithIsManipulationEnabled(this System.Windows.Controls.ToolTip self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolTip.IsManipulationEnabledProperty, value);
         return self;
     }

@@ -8,7 +8,6 @@ public static partial class UI
 {
     public static System.Windows.Controls.ContentControl WithContent(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.ContentProperty, value);
         return self;
     }
@@ -22,189 +21,162 @@ public static partial class UI
     
     public static System.Windows.Controls.ContentControl WithContentTemplate(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.ContentTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithContentTemplateSelector(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.ContentTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithContentStringFormat(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.ContentStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithBorderBrush(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithBorderThickness(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithBackground(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithForeground(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithFontFamily(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithFontSize(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithFontStretch(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithFontStyle(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithFontWeight(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithHorizontalContentAlignment(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithVerticalContentAlignment(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithTabIndex(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithIsTabStop(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithPadding(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithTemplate(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithStyle(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithOverridesDefaultStyle(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithUseLayoutRounding(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithDataContext(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithBindingGroup(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithLanguage(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithName(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithTag(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithInputScope(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.InputScopeProperty, value);
         return self;
     }
@@ -225,112 +197,96 @@ public static partial class UI
     
     public static System.Windows.Controls.ContentControl WithLayoutTransform(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithWidth(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithMinWidth(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithMaxWidth(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithHeight(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithMinHeight(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithMaxHeight(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithFlowDirection(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithMargin(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithHorizontalAlignment(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithVerticalAlignment(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithFocusVisualStyle(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithCursor(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithForceCursor(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithToolTip(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithContextMenu(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.ContextMenuProperty, value);
         return self;
     }
@@ -435,98 +391,84 @@ public static partial class UI
     
     public static System.Windows.Controls.ContentControl WithAllowDrop(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithRenderTransform(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithRenderTransformOrigin(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithOpacity(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithOpacityMask(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithBitmapEffect(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithEffect(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithBitmapEffectInput(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithCacheMode(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithUid(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithVisibility(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithClipToBounds(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithClip(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithSnapsToDevicePixels(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -540,14 +482,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ContentControl WithIsEnabled(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithIsHitTestVisible(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -561,14 +501,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ContentControl WithFocusable(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ContentControl WithIsManipulationEnabled(this System.Windows.Controls.ContentControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ContentControl.IsManipulationEnabledProperty, value);
         return self;
     }

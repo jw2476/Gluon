@@ -8,14 +8,12 @@ public static partial class UI
 {
     public static System.Windows.Controls.Label WithTarget(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.UIElement> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.TargetProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithContent(this System.Windows.Controls.Label self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.ContentProperty, value);
         return self;
     }
@@ -29,189 +27,162 @@ public static partial class UI
     
     public static System.Windows.Controls.Label WithContentTemplate(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.ContentTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithContentTemplateSelector(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.ContentTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithContentStringFormat(this System.Windows.Controls.Label self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.ContentStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithBorderBrush(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithBorderThickness(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithBackground(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithForeground(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithFontFamily(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithFontSize(this System.Windows.Controls.Label self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithFontStretch(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithFontStyle(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithFontWeight(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithHorizontalContentAlignment(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithVerticalContentAlignment(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithTabIndex(this System.Windows.Controls.Label self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithIsTabStop(this System.Windows.Controls.Label self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithPadding(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithTemplate(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithStyle(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithOverridesDefaultStyle(this System.Windows.Controls.Label self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithUseLayoutRounding(this System.Windows.Controls.Label self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithDataContext(this System.Windows.Controls.Label self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithBindingGroup(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithLanguage(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithName(this System.Windows.Controls.Label self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithTag(this System.Windows.Controls.Label self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithInputScope(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.InputScopeProperty, value);
         return self;
     }
@@ -232,112 +203,96 @@ public static partial class UI
     
     public static System.Windows.Controls.Label WithLayoutTransform(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithWidth(this System.Windows.Controls.Label self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithMinWidth(this System.Windows.Controls.Label self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithMaxWidth(this System.Windows.Controls.Label self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithHeight(this System.Windows.Controls.Label self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithMinHeight(this System.Windows.Controls.Label self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithMaxHeight(this System.Windows.Controls.Label self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithFlowDirection(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithMargin(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithHorizontalAlignment(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithVerticalAlignment(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithFocusVisualStyle(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithCursor(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithForceCursor(this System.Windows.Controls.Label self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithToolTip(this System.Windows.Controls.Label self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithContextMenu(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.ContextMenuProperty, value);
         return self;
     }
@@ -442,98 +397,84 @@ public static partial class UI
     
     public static System.Windows.Controls.Label WithAllowDrop(this System.Windows.Controls.Label self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithRenderTransform(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithRenderTransformOrigin(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithOpacity(this System.Windows.Controls.Label self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithOpacityMask(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithBitmapEffect(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithEffect(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithBitmapEffectInput(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithCacheMode(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithUid(this System.Windows.Controls.Label self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithVisibility(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithClipToBounds(this System.Windows.Controls.Label self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithClip(this System.Windows.Controls.Label self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithSnapsToDevicePixels(this System.Windows.Controls.Label self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -547,14 +488,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Label WithIsEnabled(this System.Windows.Controls.Label self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithIsHitTestVisible(this System.Windows.Controls.Label self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -568,14 +507,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Label WithFocusable(this System.Windows.Controls.Label self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Label WithIsManipulationEnabled(this System.Windows.Controls.Label self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Label.IsManipulationEnabledProperty, value);
         return self;
     }

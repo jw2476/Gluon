@@ -54,13 +54,13 @@ public sealed record ElementGenerator
                     _ => throw new ArgumentException(),
                 };
 
-                var bindingType = mode switch
-                {
-                    BindingMode.OneWayToSource => "out ReadOnlyBinding",
-                    BindingMode.OneWay => "ReadWriteBinding",
-                    BindingMode.TwoWay => "out ReadWriteBinding",
-                    _ => throw new ArgumentException(),
-                };
+                //var bindingType = mode switch
+                //{
+                //    BindingMode.OneWayToSource => "out ReadOnlyBinding",
+                //    BindingMode.OneWay => "ReadWriteBinding",
+                //    BindingMode.TwoWay => "out ReadWriteBinding",
+                //    _ => throw new ArgumentException(),
+                //};
 
 
                 var isGlobalProperty = _type.GetProperty(name)?.PropertyType == null;
@@ -80,27 +80,61 @@ public sealed record ElementGenerator
 
                 var typeName = PrintType(type);
 
-                var assignment = mode switch
-                {
-                    BindingMode.OneWayToSource => "value = new();",
-                    BindingMode.TwoWay => @$"
-var metadata = {_elementFullName}.{name}Property.GetMetadata(typeof({field.DeclaringType!.FullName}))
-    ?? throw new ArgumentException(""Can't get metadata."");
-value = new(({typeName})metadata.DefaultValue);",
-                    _ => ""
-                };
+                //                var assignment = mode switch
+                //                {
+                //                    BindingMode.OneWayToSource => "value = new();",
+                //                    BindingMode.TwoWay => @$"
+                //var metadata = {_elementFullName}.{name}Property.GetMetadata(typeof({field.DeclaringType!.FullName}))
+                //    ?? throw new ArgumentException(""Can't get metadata."");
+                //value = new(({typeName})metadata.DefaultValue);",
+                //                    _ => ""
+                //                };
 
                 var targetElementName = isGlobalProperty
                     ? typeof(FrameworkElement).FullName!
                     : _elementFullName;
 
-                return @$"
-public static {targetElementName} With{name}(this {targetElementName} self, {bindingType}<{typeName}> value)
+                return mode switch
+                {
+                    BindingMode.OneWay => $@"
+public static {targetElementName} With{name}(this {targetElementName} self, ReadWriteBinding<{typeName}> value)
 {{
-    {assignment.Indent()}
     self.SetBinding({_elementFullName}.{name}Property, value);
     return self;
-}}";
+}}",
+                    BindingMode.OneWayToSource => $@"
+public static {targetElementName} With{name}(this {targetElementName} self, out ReadOnlyBinding<{typeName}> value)
+{{
+    value = new();
+    self.SetBinding({_elementFullName}.{name}Property, value);
+    return self;
+}}",
+                    BindingMode.TwoWay => $@"
+public static {targetElementName} With{name}(this {targetElementName} self, out ReadWriteBinding<{typeName}> value)
+{{
+    var metadata = {_elementFullName}.{name}Property.GetMetadata(typeof({field.DeclaringType!.FullName}))
+        ?? throw new ArgumentException(""Can't get metadata."");
+    value = new(({typeName})metadata.DefaultValue);
+    self.SetBinding({_elementFullName}.{name}Property, value);
+    return self;
+}}
+
+public static {targetElementName} With{name}(this {targetElementName} self, out ReadWriteBinding<{typeName}> value, {typeName} initialValue)
+{{
+    value = new(initialValue);
+    self.SetBinding({_elementFullName}.{name}Property, value);
+    return self;
+}}",
+                    _ => throw new ArgumentException()
+                };
+
+                //                return @$"
+                //public static {targetElementName} With{name}(this {targetElementName} self, {bindingType}<{typeName}> value)
+                //{{
+                //    {assignment.Indent()}
+                //    self.SetBinding({_elementFullName}.{name}Property, value);
+                //    return self;
+                //}}";
             })
             .OfType<string>()
             .ToList();

@@ -6,46 +6,33 @@ using Gluon.Core;
 
 namespace Gluon.UI.Example;
 
-public sealed record Selector(string Name, Predicate<int> Predicate)
-{
-    public bool Enabled { get; set; } = true;
-};
 
 internal class MainWindowViewModel : INotifyPropertyChanged
 {
     private UIElement _content = new ContentControl();
 
-    private StackPanel GetFilters(IEnumerable<int> input, out IObservable<IEnumerable<int>> output)
+    private StackPanel GetSelectors(IEnumerable<int> input, out IObservable<IEnumerable<int>> output)
     {
-        var selectors = new List<Selector>([
-            new("Is Even", x => x % 2 == 0),
-            new("Greater Than 5", x => x > 5)]);
+        (CheckBox Element, IObservable<IEnumerable<int>> Output) GetSelector(string name, IEnumerable<int> items)
+        {
+            return (
+                name.CheckBox().WithIsChecked(out var on, true),
+                on.StartWith(true).Select(on => on == true ? items : []));
+        }
 
-        var (buttons, enabled) = selectors
-            .Select(filter =>
-            {
-                var checkBox = filter.Name
-                    .CheckBox()
-                    .WithIsChecked(out var isEnabled);
+        var selectors = new List<(string, IEnumerable<int>)>([
+            ("Greater Than 5", input.Where(x => x > 5)),
+            ("Is Even", input.Where(x => x % 2 == 0))]);
 
-                isEnabled.Value = true;
-
-                return (checkBox, isEnabled.StartWith(true));
-            })
-            .ToList()
+        var (checkBoxes, outputs) = selectors
+            .Select(selector => GetSelector(selector.Item1, selector.Item2))
             .Unzip();
 
-        output = enabled
+        output = outputs
             .CombineLatest()
-            .Select(enabled => enabled
-                .Zip(selectors)
-                .Where(x => x.First ?? false)
-                .Select(x => x.Second))
-            .Select(filters => input
-                .Where(value =>
-                    filters.Any(filter => filter.Predicate(value))));
+            .Select(outputs => outputs.SelectMany().Distinct().Order());
 
-        return buttons
+        return checkBoxes
             .StackPanel()
             .WithOrientation(Orientation.Horizontal);
     }
@@ -95,7 +82,7 @@ internal class MainWindowViewModel : INotifyPropertyChanged
         //            messageBar,
         //            messages]));
 
-        var filters = GetFilters(Enumerable.Range(0, 100), out var filtered);
+        var filters = GetSelectors(Enumerable.Range(0, 100), out var filtered);
         var ui = filtered
             .Select(filtered => UI.StackPanel([
                 filters,

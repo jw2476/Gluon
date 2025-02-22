@@ -8,84 +8,72 @@ public static partial class UI
 {
     public static System.Windows.Controls.Image WithSource(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Media.ImageSource> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.SourceProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithStretch(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Media.Stretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.StretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithStretchDirection(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Controls.StretchDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.StretchDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithStyle(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithOverridesDefaultStyle(this System.Windows.Controls.Image self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithUseLayoutRounding(this System.Windows.Controls.Image self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithDataContext(this System.Windows.Controls.Image self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithBindingGroup(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithLanguage(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithName(this System.Windows.Controls.Image self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithTag(this System.Windows.Controls.Image self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithInputScope(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.InputScopeProperty, value);
         return self;
     }
@@ -106,112 +94,96 @@ public static partial class UI
     
     public static System.Windows.Controls.Image WithLayoutTransform(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithWidth(this System.Windows.Controls.Image self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithMinWidth(this System.Windows.Controls.Image self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithMaxWidth(this System.Windows.Controls.Image self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithHeight(this System.Windows.Controls.Image self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithMinHeight(this System.Windows.Controls.Image self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithMaxHeight(this System.Windows.Controls.Image self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithFlowDirection(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithMargin(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithHorizontalAlignment(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithVerticalAlignment(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithFocusVisualStyle(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithCursor(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithForceCursor(this System.Windows.Controls.Image self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithToolTip(this System.Windows.Controls.Image self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithContextMenu(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.ContextMenuProperty, value);
         return self;
     }
@@ -316,98 +288,84 @@ public static partial class UI
     
     public static System.Windows.Controls.Image WithAllowDrop(this System.Windows.Controls.Image self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithRenderTransform(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithRenderTransformOrigin(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithOpacity(this System.Windows.Controls.Image self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithOpacityMask(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithBitmapEffect(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithEffect(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithBitmapEffectInput(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithCacheMode(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithUid(this System.Windows.Controls.Image self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithVisibility(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithClipToBounds(this System.Windows.Controls.Image self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithClip(this System.Windows.Controls.Image self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithSnapsToDevicePixels(this System.Windows.Controls.Image self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -421,14 +379,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Image WithIsEnabled(this System.Windows.Controls.Image self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithIsHitTestVisible(this System.Windows.Controls.Image self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -442,14 +398,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Image WithFocusable(this System.Windows.Controls.Image self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Image WithIsManipulationEnabled(this System.Windows.Controls.Image self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Image.IsManipulationEnabledProperty, value);
         return self;
     }

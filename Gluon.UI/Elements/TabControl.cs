@@ -8,7 +8,6 @@ public static partial class UI
 {
     public static System.Windows.Controls.TabControl WithTabStripPlacement(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Controls.Dock> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.TabStripPlacementProperty, value);
         return self;
     }
@@ -43,35 +42,30 @@ public static partial class UI
     
     public static System.Windows.Controls.TabControl WithContentTemplate(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.ContentTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithContentTemplateSelector(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.ContentTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithContentStringFormat(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.ContentStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithIsSynchronizedWithCurrentItem(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Nullable<System.Boolean>> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.IsSynchronizedWithCurrentItemProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithSelectedIndex(this System.Windows.Controls.TabControl self, out ReadWriteBinding<System.Int32> value)
     {
-        
         var metadata = System.Windows.Controls.TabControl.SelectedIndexProperty.GetMetadata(typeof(System.Windows.Controls.Primitives.Selector))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Int32)metadata.DefaultValue);
@@ -79,9 +73,15 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.TabControl WithSelectedIndex(this System.Windows.Controls.TabControl self, out ReadWriteBinding<System.Int32> value, System.Int32 initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.TabControl.SelectedIndexProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.TabControl WithSelectedItem(this System.Windows.Controls.TabControl self, out ReadWriteBinding<System.Object> value)
     {
-        
         var metadata = System.Windows.Controls.TabControl.SelectedItemProperty.GetMetadata(typeof(System.Windows.Controls.Primitives.Selector))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Object)metadata.DefaultValue);
@@ -89,9 +89,15 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.TabControl WithSelectedItem(this System.Windows.Controls.TabControl self, out ReadWriteBinding<System.Object> value, System.Object initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.TabControl.SelectedItemProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.TabControl WithSelectedValue(this System.Windows.Controls.TabControl self, out ReadWriteBinding<System.Object> value)
     {
-        
         var metadata = System.Windows.Controls.TabControl.SelectedValueProperty.GetMetadata(typeof(System.Windows.Controls.Primitives.Selector))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Object)metadata.DefaultValue);
@@ -99,16 +105,21 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.TabControl WithSelectedValue(this System.Windows.Controls.TabControl self, out ReadWriteBinding<System.Object> value, System.Object initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.TabControl.SelectedValueProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.TabControl WithSelectedValuePath(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.SelectedValuePathProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithItemsSource(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Collections.IEnumerable> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.ItemsSourceProperty, value);
         return self;
     }
@@ -122,56 +133,48 @@ public static partial class UI
     
     public static System.Windows.Controls.TabControl WithDisplayMemberPath(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.DisplayMemberPathProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithItemTemplate(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.ItemTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithItemTemplateSelector(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.ItemTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithItemStringFormat(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.ItemStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithItemBindingGroup(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.ItemBindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithItemContainerStyle(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.ItemContainerStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithItemContainerStyleSelector(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Controls.StyleSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.ItemContainerStyleSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithItemsPanel(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Controls.ItemsPanelTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.ItemsPanelProperty, value);
         return self;
     }
@@ -185,196 +188,168 @@ public static partial class UI
     
     public static System.Windows.Controls.TabControl WithGroupStyleSelector(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Controls.GroupStyleSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.GroupStyleSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithAlternationCount(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.AlternationCountProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithIsTextSearchEnabled(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.IsTextSearchEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithIsTextSearchCaseSensitive(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.IsTextSearchCaseSensitiveProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithBorderBrush(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithBorderThickness(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithBackground(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithForeground(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithFontFamily(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithFontSize(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithFontStretch(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithFontStyle(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithFontWeight(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithHorizontalContentAlignment(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithVerticalContentAlignment(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithTabIndex(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithIsTabStop(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithPadding(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithTemplate(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithStyle(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithOverridesDefaultStyle(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithUseLayoutRounding(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithDataContext(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithBindingGroup(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithLanguage(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithName(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithTag(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithInputScope(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.InputScopeProperty, value);
         return self;
     }
@@ -395,112 +370,96 @@ public static partial class UI
     
     public static System.Windows.Controls.TabControl WithLayoutTransform(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithWidth(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithMinWidth(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithMaxWidth(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithHeight(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithMinHeight(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithMaxHeight(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithFlowDirection(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithMargin(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithHorizontalAlignment(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithVerticalAlignment(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithFocusVisualStyle(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithCursor(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithForceCursor(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithToolTip(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithContextMenu(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.ContextMenuProperty, value);
         return self;
     }
@@ -605,98 +564,84 @@ public static partial class UI
     
     public static System.Windows.Controls.TabControl WithAllowDrop(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithRenderTransform(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithRenderTransformOrigin(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithOpacity(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithOpacityMask(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithBitmapEffect(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithEffect(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithBitmapEffectInput(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithCacheMode(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithUid(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithVisibility(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithClipToBounds(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithClip(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithSnapsToDevicePixels(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -710,14 +655,12 @@ public static partial class UI
     
     public static System.Windows.Controls.TabControl WithIsEnabled(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithIsHitTestVisible(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -731,14 +674,12 @@ public static partial class UI
     
     public static System.Windows.Controls.TabControl WithFocusable(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TabControl WithIsManipulationEnabled(this System.Windows.Controls.TabControl self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TabControl.IsManipulationEnabledProperty, value);
         return self;
     }

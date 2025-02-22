@@ -8,84 +8,72 @@ public static partial class UI
 {
     public static System.Windows.Controls.StackPanel WithOrientation(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Controls.Orientation> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.OrientationProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithBackground(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithIsItemsHost(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.IsItemsHostProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithStyle(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithOverridesDefaultStyle(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithUseLayoutRounding(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithDataContext(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithBindingGroup(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithLanguage(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithName(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithTag(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithInputScope(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.InputScopeProperty, value);
         return self;
     }
@@ -106,112 +94,96 @@ public static partial class UI
     
     public static System.Windows.Controls.StackPanel WithLayoutTransform(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithWidth(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithMinWidth(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithMaxWidth(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithHeight(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithMinHeight(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithMaxHeight(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithFlowDirection(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithMargin(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithHorizontalAlignment(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithVerticalAlignment(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithFocusVisualStyle(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithCursor(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithForceCursor(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithToolTip(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithContextMenu(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.ContextMenuProperty, value);
         return self;
     }
@@ -316,98 +288,84 @@ public static partial class UI
     
     public static System.Windows.Controls.StackPanel WithAllowDrop(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithRenderTransform(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithRenderTransformOrigin(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithOpacity(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithOpacityMask(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithBitmapEffect(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithEffect(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithBitmapEffectInput(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithCacheMode(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithUid(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithVisibility(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithClipToBounds(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithClip(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithSnapsToDevicePixels(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -421,14 +379,12 @@ public static partial class UI
     
     public static System.Windows.Controls.StackPanel WithIsEnabled(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithIsHitTestVisible(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -442,14 +398,12 @@ public static partial class UI
     
     public static System.Windows.Controls.StackPanel WithFocusable(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.StackPanel WithIsManipulationEnabled(this System.Windows.Controls.StackPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.StackPanel.IsManipulationEnabledProperty, value);
         return self;
     }

@@ -8,7 +8,6 @@ public static partial class UI
 {
     public static System.Windows.Controls.Primitives.StatusBarItem WithContent(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.ContentProperty, value);
         return self;
     }
@@ -22,189 +21,162 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithContentTemplate(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.ContentTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithContentTemplateSelector(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.ContentTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithContentStringFormat(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.ContentStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithBorderBrush(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithBorderThickness(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithBackground(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithForeground(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithFontFamily(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithFontSize(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithFontStretch(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithFontStyle(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithFontWeight(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithHorizontalContentAlignment(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithVerticalContentAlignment(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithTabIndex(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithIsTabStop(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithPadding(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithTemplate(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithStyle(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithOverridesDefaultStyle(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithUseLayoutRounding(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithDataContext(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithBindingGroup(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithLanguage(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithName(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithTag(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithInputScope(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.InputScopeProperty, value);
         return self;
     }
@@ -225,112 +197,96 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithLayoutTransform(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithWidth(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithMinWidth(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithMaxWidth(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithHeight(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithMinHeight(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithMaxHeight(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithFlowDirection(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithMargin(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithHorizontalAlignment(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithVerticalAlignment(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithFocusVisualStyle(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithCursor(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithForceCursor(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithToolTip(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithContextMenu(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.ContextMenuProperty, value);
         return self;
     }
@@ -435,98 +391,84 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithAllowDrop(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithRenderTransform(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithRenderTransformOrigin(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithOpacity(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithOpacityMask(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithBitmapEffect(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithEffect(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithBitmapEffectInput(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithCacheMode(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithUid(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithVisibility(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithClipToBounds(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithClip(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithSnapsToDevicePixels(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -540,14 +482,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithIsEnabled(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithIsHitTestVisible(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -561,14 +501,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithFocusable(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.StatusBarItem WithIsManipulationEnabled(this System.Windows.Controls.Primitives.StatusBarItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.StatusBarItem.IsManipulationEnabledProperty, value);
         return self;
     }

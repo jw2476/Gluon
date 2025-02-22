@@ -8,14 +8,12 @@ public static partial class UI
 {
     public static System.Windows.Controls.ComboBox WithMaxDropDownHeight(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.MaxDropDownHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithIsDropDownOpen(this System.Windows.Controls.ComboBox self, out ReadWriteBinding<System.Boolean> value)
     {
-        
         var metadata = System.Windows.Controls.ComboBox.IsDropDownOpenProperty.GetMetadata(typeof(System.Windows.Controls.ComboBox))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Boolean)metadata.DefaultValue);
@@ -23,23 +21,27 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.ComboBox WithIsDropDownOpen(this System.Windows.Controls.ComboBox self, out ReadWriteBinding<System.Boolean> value, System.Boolean initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.ComboBox.IsDropDownOpenProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.ComboBox WithShouldPreserveUserEnteredPrefix(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.ShouldPreserveUserEnteredPrefixProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithIsEditable(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.IsEditableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithText(this System.Windows.Controls.ComboBox self, out ReadWriteBinding<System.String> value)
     {
-        
         var metadata = System.Windows.Controls.ComboBox.TextProperty.GetMetadata(typeof(System.Windows.Controls.ComboBox))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.String)metadata.DefaultValue);
@@ -47,9 +49,15 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.ComboBox WithText(this System.Windows.Controls.ComboBox self, out ReadWriteBinding<System.String> value, System.String initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.ComboBox.TextProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.ComboBox WithIsReadOnly(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.IsReadOnlyProperty, value);
         return self;
     }
@@ -77,7 +85,6 @@ public static partial class UI
     
     public static System.Windows.Controls.ComboBox WithStaysOpenOnEdit(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.StaysOpenOnEditProperty, value);
         return self;
     }
@@ -91,7 +98,6 @@ public static partial class UI
     
     public static System.Windows.FrameworkElement WithIsSelected(this System.Windows.FrameworkElement self, out ReadWriteBinding<System.Boolean> value)
     {
-        
         var metadata = System.Windows.Controls.ComboBox.IsSelectedProperty.GetMetadata(typeof(System.Windows.Controls.Primitives.Selector))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Boolean)metadata.DefaultValue);
@@ -99,16 +105,21 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.FrameworkElement WithIsSelected(this System.Windows.FrameworkElement self, out ReadWriteBinding<System.Boolean> value, System.Boolean initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.ComboBox.IsSelectedProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.ComboBox WithIsSynchronizedWithCurrentItem(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Nullable<System.Boolean>> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.IsSynchronizedWithCurrentItemProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithSelectedIndex(this System.Windows.Controls.ComboBox self, out ReadWriteBinding<System.Int32> value)
     {
-        
         var metadata = System.Windows.Controls.ComboBox.SelectedIndexProperty.GetMetadata(typeof(System.Windows.Controls.Primitives.Selector))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Int32)metadata.DefaultValue);
@@ -116,9 +127,15 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.ComboBox WithSelectedIndex(this System.Windows.Controls.ComboBox self, out ReadWriteBinding<System.Int32> value, System.Int32 initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.ComboBox.SelectedIndexProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.ComboBox WithSelectedItem(this System.Windows.Controls.ComboBox self, out ReadWriteBinding<System.Object> value)
     {
-        
         var metadata = System.Windows.Controls.ComboBox.SelectedItemProperty.GetMetadata(typeof(System.Windows.Controls.Primitives.Selector))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Object)metadata.DefaultValue);
@@ -126,9 +143,15 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.ComboBox WithSelectedItem(this System.Windows.Controls.ComboBox self, out ReadWriteBinding<System.Object> value, System.Object initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.ComboBox.SelectedItemProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.ComboBox WithSelectedValue(this System.Windows.Controls.ComboBox self, out ReadWriteBinding<System.Object> value)
     {
-        
         var metadata = System.Windows.Controls.ComboBox.SelectedValueProperty.GetMetadata(typeof(System.Windows.Controls.Primitives.Selector))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Object)metadata.DefaultValue);
@@ -136,16 +159,21 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.ComboBox WithSelectedValue(this System.Windows.Controls.ComboBox self, out ReadWriteBinding<System.Object> value, System.Object initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.ComboBox.SelectedValueProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.ComboBox WithSelectedValuePath(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.SelectedValuePathProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithItemsSource(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Collections.IEnumerable> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.ItemsSourceProperty, value);
         return self;
     }
@@ -159,56 +187,48 @@ public static partial class UI
     
     public static System.Windows.Controls.ComboBox WithDisplayMemberPath(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.DisplayMemberPathProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithItemTemplate(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.ItemTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithItemTemplateSelector(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.ItemTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithItemStringFormat(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.ItemStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithItemBindingGroup(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.ItemBindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithItemContainerStyle(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.ItemContainerStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithItemContainerStyleSelector(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Controls.StyleSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.ItemContainerStyleSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithItemsPanel(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Controls.ItemsPanelTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.ItemsPanelProperty, value);
         return self;
     }
@@ -222,14 +242,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ComboBox WithGroupStyleSelector(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Controls.GroupStyleSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.GroupStyleSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithAlternationCount(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.AlternationCountProperty, value);
         return self;
     }
@@ -243,182 +261,156 @@ public static partial class UI
     
     public static System.Windows.Controls.ComboBox WithIsTextSearchEnabled(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.IsTextSearchEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithIsTextSearchCaseSensitive(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.IsTextSearchCaseSensitiveProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithBorderBrush(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithBorderThickness(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithBackground(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithForeground(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithFontFamily(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithFontSize(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithFontStretch(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithFontStyle(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithFontWeight(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithHorizontalContentAlignment(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithVerticalContentAlignment(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithTabIndex(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithIsTabStop(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithPadding(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithTemplate(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithStyle(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithOverridesDefaultStyle(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithUseLayoutRounding(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithDataContext(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithBindingGroup(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithLanguage(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithName(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithTag(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithInputScope(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.InputScopeProperty, value);
         return self;
     }
@@ -439,112 +431,96 @@ public static partial class UI
     
     public static System.Windows.Controls.ComboBox WithLayoutTransform(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithWidth(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithMinWidth(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithMaxWidth(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithHeight(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithMinHeight(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithMaxHeight(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithFlowDirection(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithMargin(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithHorizontalAlignment(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithVerticalAlignment(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithFocusVisualStyle(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithCursor(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithForceCursor(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithToolTip(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithContextMenu(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.ContextMenuProperty, value);
         return self;
     }
@@ -649,98 +625,84 @@ public static partial class UI
     
     public static System.Windows.Controls.ComboBox WithAllowDrop(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithRenderTransform(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithRenderTransformOrigin(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithOpacity(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithOpacityMask(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithBitmapEffect(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithEffect(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithBitmapEffectInput(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithCacheMode(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithUid(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithVisibility(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithClipToBounds(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithClip(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithSnapsToDevicePixels(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -754,14 +716,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ComboBox WithIsEnabled(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithIsHitTestVisible(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -775,14 +735,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ComboBox WithFocusable(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ComboBox WithIsManipulationEnabled(this System.Windows.Controls.ComboBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ComboBox.IsManipulationEnabledProperty, value);
         return self;
     }

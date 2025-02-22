@@ -8,17 +8,22 @@ public static partial class UI
 {
     public static System.Windows.Controls.TreeViewItem WithIsExpanded(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.IsExpandedProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithIsSelected(this System.Windows.Controls.TreeViewItem self, out ReadWriteBinding<System.Boolean> value)
     {
-        
         var metadata = System.Windows.Controls.TreeViewItem.IsSelectedProperty.GetMetadata(typeof(System.Windows.Controls.TreeViewItem))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Boolean)metadata.DefaultValue);
+        self.SetBinding(System.Windows.Controls.TreeViewItem.IsSelectedProperty, value);
+        return self;
+    }
+    
+    public static System.Windows.Controls.TreeViewItem WithIsSelected(this System.Windows.Controls.TreeViewItem self, out ReadWriteBinding<System.Boolean> value, System.Boolean initialValue)
+    {
+        value = new(initialValue);
         self.SetBinding(System.Windows.Controls.TreeViewItem.IsSelectedProperty, value);
         return self;
     }
@@ -32,7 +37,6 @@ public static partial class UI
     
     public static System.Windows.Controls.TreeViewItem WithHeader(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.HeaderProperty, value);
         return self;
     }
@@ -46,28 +50,24 @@ public static partial class UI
     
     public static System.Windows.Controls.TreeViewItem WithHeaderTemplate(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.HeaderTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithHeaderTemplateSelector(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.HeaderTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithHeaderStringFormat(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.HeaderStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithItemsSource(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Collections.IEnumerable> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.ItemsSourceProperty, value);
         return self;
     }
@@ -81,56 +81,48 @@ public static partial class UI
     
     public static System.Windows.Controls.TreeViewItem WithDisplayMemberPath(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.DisplayMemberPathProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithItemTemplate(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.ItemTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithItemTemplateSelector(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.ItemTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithItemStringFormat(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.ItemStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithItemBindingGroup(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.ItemBindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithItemContainerStyle(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.ItemContainerStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithItemContainerStyleSelector(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Controls.StyleSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.ItemContainerStyleSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithItemsPanel(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Controls.ItemsPanelTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.ItemsPanelProperty, value);
         return self;
     }
@@ -144,196 +136,168 @@ public static partial class UI
     
     public static System.Windows.Controls.TreeViewItem WithGroupStyleSelector(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Controls.GroupStyleSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.GroupStyleSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithAlternationCount(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.AlternationCountProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithIsTextSearchEnabled(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.IsTextSearchEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithIsTextSearchCaseSensitive(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.IsTextSearchCaseSensitiveProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithBorderBrush(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithBorderThickness(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithBackground(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithForeground(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithFontFamily(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithFontSize(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithFontStretch(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithFontStyle(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithFontWeight(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithHorizontalContentAlignment(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithVerticalContentAlignment(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithTabIndex(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithIsTabStop(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithPadding(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithTemplate(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithStyle(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithOverridesDefaultStyle(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithUseLayoutRounding(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithDataContext(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithBindingGroup(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithLanguage(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithName(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithTag(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithInputScope(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.InputScopeProperty, value);
         return self;
     }
@@ -354,112 +318,96 @@ public static partial class UI
     
     public static System.Windows.Controls.TreeViewItem WithLayoutTransform(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithWidth(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithMinWidth(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithMaxWidth(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithHeight(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithMinHeight(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithMaxHeight(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithFlowDirection(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithMargin(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithHorizontalAlignment(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithVerticalAlignment(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithFocusVisualStyle(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithCursor(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithForceCursor(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithToolTip(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithContextMenu(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.ContextMenuProperty, value);
         return self;
     }
@@ -564,98 +512,84 @@ public static partial class UI
     
     public static System.Windows.Controls.TreeViewItem WithAllowDrop(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithRenderTransform(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithRenderTransformOrigin(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithOpacity(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithOpacityMask(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithBitmapEffect(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithEffect(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithBitmapEffectInput(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithCacheMode(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithUid(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithVisibility(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithClipToBounds(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithClip(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithSnapsToDevicePixels(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -669,14 +603,12 @@ public static partial class UI
     
     public static System.Windows.Controls.TreeViewItem WithIsEnabled(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithIsHitTestVisible(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -690,14 +622,12 @@ public static partial class UI
     
     public static System.Windows.Controls.TreeViewItem WithFocusable(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TreeViewItem WithIsManipulationEnabled(this System.Windows.Controls.TreeViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TreeViewItem.IsManipulationEnabledProperty, value);
         return self;
     }

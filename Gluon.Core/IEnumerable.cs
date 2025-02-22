@@ -18,4 +18,9 @@ public static partial class Extensions
             array.Select(x => x.Item1),
             array.Select(x => x.Item2));
     }
+
+    public static IEnumerable<T> SelectMany<T>(this IEnumerable<IEnumerable<T>> self)
+    {
+        return self.SelectMany(x => x);
+    }
 }

@@ -8,7 +8,6 @@ public static partial class UI
 {
     public static System.Windows.Controls.CheckBox WithIsChecked(this System.Windows.Controls.CheckBox self, out ReadWriteBinding<System.Nullable<System.Boolean>> value)
     {
-        
         var metadata = System.Windows.Controls.CheckBox.IsCheckedProperty.GetMetadata(typeof(System.Windows.Controls.Primitives.ToggleButton))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Nullable<System.Boolean>)metadata.DefaultValue);
@@ -16,30 +15,33 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.CheckBox WithIsChecked(this System.Windows.Controls.CheckBox self, out ReadWriteBinding<System.Nullable<System.Boolean>> value, System.Nullable<System.Boolean> initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.CheckBox.IsCheckedProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.CheckBox WithIsThreeState(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.IsThreeStateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithCommand(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Input.ICommand> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.CommandProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithCommandParameter(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.CommandParameterProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithCommandTarget(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.IInputElement> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.CommandTargetProperty, value);
         return self;
     }
@@ -53,14 +55,12 @@ public static partial class UI
     
     public static System.Windows.Controls.CheckBox WithClickMode(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Controls.ClickMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.ClickModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithContent(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.ContentProperty, value);
         return self;
     }
@@ -74,189 +74,162 @@ public static partial class UI
     
     public static System.Windows.Controls.CheckBox WithContentTemplate(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.ContentTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithContentTemplateSelector(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.ContentTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithContentStringFormat(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.ContentStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithBorderBrush(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithBorderThickness(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithBackground(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithForeground(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithFontFamily(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithFontSize(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithFontStretch(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithFontStyle(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithFontWeight(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithHorizontalContentAlignment(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithVerticalContentAlignment(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithTabIndex(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithIsTabStop(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithPadding(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithTemplate(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithStyle(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithOverridesDefaultStyle(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithUseLayoutRounding(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithDataContext(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithBindingGroup(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithLanguage(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithName(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithTag(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithInputScope(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.InputScopeProperty, value);
         return self;
     }
@@ -277,112 +250,96 @@ public static partial class UI
     
     public static System.Windows.Controls.CheckBox WithLayoutTransform(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithWidth(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithMinWidth(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithMaxWidth(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithHeight(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithMinHeight(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithMaxHeight(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithFlowDirection(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithMargin(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithHorizontalAlignment(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithVerticalAlignment(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithFocusVisualStyle(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithCursor(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithForceCursor(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithToolTip(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithContextMenu(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.ContextMenuProperty, value);
         return self;
     }
@@ -487,98 +444,84 @@ public static partial class UI
     
     public static System.Windows.Controls.CheckBox WithAllowDrop(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithRenderTransform(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithRenderTransformOrigin(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithOpacity(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithOpacityMask(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithBitmapEffect(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithEffect(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithBitmapEffectInput(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithCacheMode(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithUid(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithVisibility(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithClipToBounds(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithClip(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithSnapsToDevicePixels(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -592,14 +535,12 @@ public static partial class UI
     
     public static System.Windows.Controls.CheckBox WithIsEnabled(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithIsHitTestVisible(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -613,14 +554,12 @@ public static partial class UI
     
     public static System.Windows.Controls.CheckBox WithFocusable(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.CheckBox WithIsManipulationEnabled(this System.Windows.Controls.CheckBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.CheckBox.IsManipulationEnabledProperty, value);
         return self;
     }

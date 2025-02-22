@@ -8,98 +8,84 @@ public static partial class UI
 {
     public static System.Windows.Controls.WrapPanel WithItemWidth(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.ItemWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithItemHeight(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.ItemHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithOrientation(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Controls.Orientation> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.OrientationProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithBackground(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithIsItemsHost(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.IsItemsHostProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithStyle(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithOverridesDefaultStyle(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithUseLayoutRounding(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithDataContext(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithBindingGroup(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithLanguage(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithName(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithTag(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithInputScope(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.InputScopeProperty, value);
         return self;
     }
@@ -120,112 +106,96 @@ public static partial class UI
     
     public static System.Windows.Controls.WrapPanel WithLayoutTransform(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithWidth(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithMinWidth(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithMaxWidth(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithHeight(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithMinHeight(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithMaxHeight(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithFlowDirection(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithMargin(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithHorizontalAlignment(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithVerticalAlignment(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithFocusVisualStyle(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithCursor(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithForceCursor(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithToolTip(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithContextMenu(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.ContextMenuProperty, value);
         return self;
     }
@@ -330,98 +300,84 @@ public static partial class UI
     
     public static System.Windows.Controls.WrapPanel WithAllowDrop(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithRenderTransform(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithRenderTransformOrigin(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithOpacity(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithOpacityMask(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithBitmapEffect(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithEffect(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithBitmapEffectInput(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithCacheMode(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithUid(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithVisibility(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithClipToBounds(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithClip(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithSnapsToDevicePixels(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -435,14 +391,12 @@ public static partial class UI
     
     public static System.Windows.Controls.WrapPanel WithIsEnabled(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithIsHitTestVisible(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -456,14 +410,12 @@ public static partial class UI
     
     public static System.Windows.Controls.WrapPanel WithFocusable(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.WrapPanel WithIsManipulationEnabled(this System.Windows.Controls.WrapPanel self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.WrapPanel.IsManipulationEnabledProperty, value);
         return self;
     }

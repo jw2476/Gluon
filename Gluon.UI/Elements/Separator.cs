@@ -8,168 +8,144 @@ public static partial class UI
 {
     public static System.Windows.Controls.Separator WithBorderBrush(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithBorderThickness(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithBackground(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithForeground(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithFontFamily(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithFontSize(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithFontStretch(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithFontStyle(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithFontWeight(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithHorizontalContentAlignment(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithVerticalContentAlignment(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithTabIndex(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithIsTabStop(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithPadding(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithTemplate(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithStyle(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithOverridesDefaultStyle(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithUseLayoutRounding(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithDataContext(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithBindingGroup(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithLanguage(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithName(this System.Windows.Controls.Separator self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithTag(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithInputScope(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.InputScopeProperty, value);
         return self;
     }
@@ -190,112 +166,96 @@ public static partial class UI
     
     public static System.Windows.Controls.Separator WithLayoutTransform(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithWidth(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithMinWidth(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithMaxWidth(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithHeight(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithMinHeight(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithMaxHeight(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithFlowDirection(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithMargin(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithHorizontalAlignment(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithVerticalAlignment(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithFocusVisualStyle(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithCursor(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithForceCursor(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithToolTip(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithContextMenu(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.ContextMenuProperty, value);
         return self;
     }
@@ -400,98 +360,84 @@ public static partial class UI
     
     public static System.Windows.Controls.Separator WithAllowDrop(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithRenderTransform(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithRenderTransformOrigin(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithOpacity(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithOpacityMask(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithBitmapEffect(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithEffect(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithBitmapEffectInput(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithCacheMode(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithUid(this System.Windows.Controls.Separator self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithVisibility(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithClipToBounds(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithClip(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithSnapsToDevicePixels(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -505,14 +451,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Separator WithIsEnabled(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithIsHitTestVisible(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -526,14 +470,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Separator WithFocusable(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Separator WithIsManipulationEnabled(this System.Windows.Controls.Separator self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Separator.IsManipulationEnabledProperty, value);
         return self;
     }

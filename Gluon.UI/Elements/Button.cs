@@ -8,14 +8,12 @@ public static partial class UI
 {
     public static System.Windows.Controls.Button WithIsDefault(this System.Windows.Controls.Button self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.IsDefaultProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithIsCancel(this System.Windows.Controls.Button self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.IsCancelProperty, value);
         return self;
     }
@@ -29,21 +27,18 @@ public static partial class UI
     
     public static System.Windows.Controls.Button WithCommand(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Input.ICommand> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.CommandProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithCommandParameter(this System.Windows.Controls.Button self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.CommandParameterProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithCommandTarget(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.IInputElement> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.CommandTargetProperty, value);
         return self;
     }
@@ -57,14 +52,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Button WithClickMode(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Controls.ClickMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.ClickModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithContent(this System.Windows.Controls.Button self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.ContentProperty, value);
         return self;
     }
@@ -78,189 +71,162 @@ public static partial class UI
     
     public static System.Windows.Controls.Button WithContentTemplate(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.ContentTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithContentTemplateSelector(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.ContentTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithContentStringFormat(this System.Windows.Controls.Button self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.ContentStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithBorderBrush(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithBorderThickness(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithBackground(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithForeground(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithFontFamily(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithFontSize(this System.Windows.Controls.Button self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithFontStretch(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithFontStyle(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithFontWeight(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithHorizontalContentAlignment(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithVerticalContentAlignment(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithTabIndex(this System.Windows.Controls.Button self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithIsTabStop(this System.Windows.Controls.Button self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithPadding(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithTemplate(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithStyle(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithOverridesDefaultStyle(this System.Windows.Controls.Button self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithUseLayoutRounding(this System.Windows.Controls.Button self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithDataContext(this System.Windows.Controls.Button self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithBindingGroup(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithLanguage(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithName(this System.Windows.Controls.Button self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithTag(this System.Windows.Controls.Button self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithInputScope(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.InputScopeProperty, value);
         return self;
     }
@@ -281,112 +247,96 @@ public static partial class UI
     
     public static System.Windows.Controls.Button WithLayoutTransform(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithWidth(this System.Windows.Controls.Button self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithMinWidth(this System.Windows.Controls.Button self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithMaxWidth(this System.Windows.Controls.Button self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithHeight(this System.Windows.Controls.Button self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithMinHeight(this System.Windows.Controls.Button self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithMaxHeight(this System.Windows.Controls.Button self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithFlowDirection(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithMargin(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithHorizontalAlignment(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithVerticalAlignment(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithFocusVisualStyle(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithCursor(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithForceCursor(this System.Windows.Controls.Button self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithToolTip(this System.Windows.Controls.Button self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithContextMenu(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.ContextMenuProperty, value);
         return self;
     }
@@ -491,98 +441,84 @@ public static partial class UI
     
     public static System.Windows.Controls.Button WithAllowDrop(this System.Windows.Controls.Button self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithRenderTransform(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithRenderTransformOrigin(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithOpacity(this System.Windows.Controls.Button self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithOpacityMask(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithBitmapEffect(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithEffect(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithBitmapEffectInput(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithCacheMode(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithUid(this System.Windows.Controls.Button self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithVisibility(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithClipToBounds(this System.Windows.Controls.Button self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithClip(this System.Windows.Controls.Button self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithSnapsToDevicePixels(this System.Windows.Controls.Button self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -596,14 +532,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Button WithIsEnabled(this System.Windows.Controls.Button self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithIsHitTestVisible(this System.Windows.Controls.Button self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -617,14 +551,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Button WithFocusable(this System.Windows.Controls.Button self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Button WithIsManipulationEnabled(this System.Windows.Controls.Button self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Button.IsManipulationEnabledProperty, value);
         return self;
     }

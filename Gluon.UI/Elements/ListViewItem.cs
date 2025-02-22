@@ -8,7 +8,6 @@ public static partial class UI
 {
     public static System.Windows.Controls.ListViewItem WithIsSelected(this System.Windows.Controls.ListViewItem self, out ReadWriteBinding<System.Boolean> value)
     {
-        
         var metadata = System.Windows.Controls.ListViewItem.IsSelectedProperty.GetMetadata(typeof(System.Windows.Controls.ListBoxItem))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Boolean)metadata.DefaultValue);
@@ -16,9 +15,15 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.ListViewItem WithIsSelected(this System.Windows.Controls.ListViewItem self, out ReadWriteBinding<System.Boolean> value, System.Boolean initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.ListViewItem.IsSelectedProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.ListViewItem WithContent(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.ContentProperty, value);
         return self;
     }
@@ -32,189 +37,162 @@ public static partial class UI
     
     public static System.Windows.Controls.ListViewItem WithContentTemplate(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.ContentTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithContentTemplateSelector(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.ContentTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithContentStringFormat(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.ContentStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithBorderBrush(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithBorderThickness(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithBackground(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithForeground(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithFontFamily(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithFontSize(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithFontStretch(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithFontStyle(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithFontWeight(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithHorizontalContentAlignment(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithVerticalContentAlignment(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithTabIndex(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithIsTabStop(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithPadding(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithTemplate(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithStyle(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithOverridesDefaultStyle(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithUseLayoutRounding(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithDataContext(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithBindingGroup(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithLanguage(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithName(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithTag(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithInputScope(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.InputScopeProperty, value);
         return self;
     }
@@ -235,112 +213,96 @@ public static partial class UI
     
     public static System.Windows.Controls.ListViewItem WithLayoutTransform(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithWidth(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithMinWidth(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithMaxWidth(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithHeight(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithMinHeight(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithMaxHeight(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithFlowDirection(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithMargin(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithHorizontalAlignment(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithVerticalAlignment(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithFocusVisualStyle(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithCursor(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithForceCursor(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithToolTip(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithContextMenu(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.ContextMenuProperty, value);
         return self;
     }
@@ -445,98 +407,84 @@ public static partial class UI
     
     public static System.Windows.Controls.ListViewItem WithAllowDrop(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithRenderTransform(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithRenderTransformOrigin(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithOpacity(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithOpacityMask(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithBitmapEffect(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithEffect(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithBitmapEffectInput(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithCacheMode(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithUid(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithVisibility(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithClipToBounds(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithClip(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithSnapsToDevicePixels(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -550,14 +498,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ListViewItem WithIsEnabled(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithIsHitTestVisible(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -571,14 +517,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ListViewItem WithFocusable(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ListViewItem WithIsManipulationEnabled(this System.Windows.Controls.ListViewItem self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ListViewItem.IsManipulationEnabledProperty, value);
         return self;
     }

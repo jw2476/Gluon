@@ -8,35 +8,30 @@ public static partial class UI
 {
     public static System.Windows.Controls.Primitives.ScrollBar WithOrientation(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Controls.Orientation> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.OrientationProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithViewportSize(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.ViewportSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithMinimum(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.MinimumProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithMaximum(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.MaximumProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithValue(this System.Windows.Controls.Primitives.ScrollBar self, out ReadWriteBinding<System.Double> value)
     {
-        
         var metadata = System.Windows.Controls.Primitives.ScrollBar.ValueProperty.GetMetadata(typeof(System.Windows.Controls.Primitives.RangeBase))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Double)metadata.DefaultValue);
@@ -44,184 +39,165 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.Primitives.ScrollBar WithValue(this System.Windows.Controls.Primitives.ScrollBar self, out ReadWriteBinding<System.Double> value, System.Double initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.ValueProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.Primitives.ScrollBar WithLargeChange(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.LargeChangeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithSmallChange(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.SmallChangeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithBorderBrush(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithBorderThickness(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithBackground(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithForeground(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithFontFamily(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithFontSize(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithFontStretch(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithFontStyle(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithFontWeight(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithHorizontalContentAlignment(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithVerticalContentAlignment(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithTabIndex(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithIsTabStop(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithPadding(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithTemplate(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithStyle(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithOverridesDefaultStyle(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithUseLayoutRounding(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithDataContext(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithBindingGroup(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithLanguage(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithName(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithTag(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithInputScope(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.InputScopeProperty, value);
         return self;
     }
@@ -242,112 +218,96 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.ScrollBar WithLayoutTransform(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithWidth(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithMinWidth(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithMaxWidth(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithHeight(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithMinHeight(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithMaxHeight(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithFlowDirection(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithMargin(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithHorizontalAlignment(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithVerticalAlignment(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithFocusVisualStyle(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithCursor(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithForceCursor(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithToolTip(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithContextMenu(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.ContextMenuProperty, value);
         return self;
     }
@@ -452,98 +412,84 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.ScrollBar WithAllowDrop(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithRenderTransform(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithRenderTransformOrigin(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithOpacity(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithOpacityMask(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithBitmapEffect(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithEffect(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithBitmapEffectInput(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithCacheMode(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithUid(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithVisibility(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithClipToBounds(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithClip(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithSnapsToDevicePixels(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -557,14 +503,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.ScrollBar WithIsEnabled(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithIsHitTestVisible(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -578,14 +522,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Primitives.ScrollBar WithFocusable(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Primitives.ScrollBar WithIsManipulationEnabled(this System.Windows.Controls.Primitives.ScrollBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Primitives.ScrollBar.IsManipulationEnabledProperty, value);
         return self;
     }

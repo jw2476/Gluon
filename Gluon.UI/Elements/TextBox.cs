@@ -8,28 +8,24 @@ public static partial class UI
 {
     public static System.Windows.Controls.TextBox WithTextWrapping(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.TextWrapping> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.TextWrappingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithMinLines(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.MinLinesProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithMaxLines(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.MaxLinesProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithText(this System.Windows.Controls.TextBox self, out ReadWriteBinding<System.String> value)
     {
-        
         var metadata = System.Windows.Controls.TextBox.TextProperty.GetMetadata(typeof(System.Windows.Controls.TextBox))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.String)metadata.DefaultValue);
@@ -37,121 +33,111 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.TextBox WithText(this System.Windows.Controls.TextBox self, out ReadWriteBinding<System.String> value, System.String initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.TextBox.TextProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.TextBox WithCharacterCasing(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Controls.CharacterCasing> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.CharacterCasingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithMaxLength(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.MaxLengthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithTextAlignment(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.TextAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.TextAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithTextDecorations(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.TextDecorationCollection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.TextDecorationsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithIsReadOnly(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.IsReadOnlyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithIsReadOnlyCaretVisible(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.IsReadOnlyCaretVisibleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithAcceptsReturn(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.AcceptsReturnProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithAcceptsTab(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.AcceptsTabProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithHorizontalScrollBarVisibility(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Controls.ScrollBarVisibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.HorizontalScrollBarVisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithVerticalScrollBarVisibility(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Controls.ScrollBarVisibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.VerticalScrollBarVisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithIsUndoEnabled(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.IsUndoEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithUndoLimit(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.UndoLimitProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithAutoWordSelection(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.AutoWordSelectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithSelectionBrush(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.SelectionBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithSelectionTextBrush(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.SelectionTextBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithSelectionOpacity(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.SelectionOpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithCaretBrush(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.CaretBrushProperty, value);
         return self;
     }
@@ -165,175 +151,150 @@ public static partial class UI
     
     public static System.Windows.Controls.TextBox WithIsInactiveSelectionHighlightEnabled(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.IsInactiveSelectionHighlightEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithBorderBrush(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithBorderThickness(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithBackground(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithForeground(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithFontFamily(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithFontSize(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithFontStretch(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithFontStyle(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithFontWeight(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithHorizontalContentAlignment(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithVerticalContentAlignment(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithTabIndex(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithIsTabStop(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithPadding(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithTemplate(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithStyle(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithOverridesDefaultStyle(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithUseLayoutRounding(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithDataContext(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithBindingGroup(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithLanguage(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithName(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithTag(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithInputScope(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.InputScopeProperty, value);
         return self;
     }
@@ -354,112 +315,96 @@ public static partial class UI
     
     public static System.Windows.Controls.TextBox WithLayoutTransform(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithWidth(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithMinWidth(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithMaxWidth(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithHeight(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithMinHeight(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithMaxHeight(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithFlowDirection(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithMargin(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithHorizontalAlignment(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithVerticalAlignment(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithFocusVisualStyle(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithCursor(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithForceCursor(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithToolTip(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithContextMenu(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.ContextMenuProperty, value);
         return self;
     }
@@ -564,98 +509,84 @@ public static partial class UI
     
     public static System.Windows.Controls.TextBox WithAllowDrop(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithRenderTransform(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithRenderTransformOrigin(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithOpacity(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithOpacityMask(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithBitmapEffect(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithEffect(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithBitmapEffectInput(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithCacheMode(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithUid(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithVisibility(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithClipToBounds(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithClip(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithSnapsToDevicePixels(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -669,14 +600,12 @@ public static partial class UI
     
     public static System.Windows.Controls.TextBox WithIsEnabled(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithIsHitTestVisible(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -690,14 +619,12 @@ public static partial class UI
     
     public static System.Windows.Controls.TextBox WithFocusable(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.TextBox WithIsManipulationEnabled(this System.Windows.Controls.TextBox self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.TextBox.IsManipulationEnabledProperty, value);
         return self;
     }

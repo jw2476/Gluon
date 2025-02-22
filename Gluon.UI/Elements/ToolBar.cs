@@ -15,24 +15,28 @@ public static partial class UI
     
     public static System.Windows.Controls.ToolBar WithBand(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.BandProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithBandIndex(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.BandIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithIsOverflowOpen(this System.Windows.Controls.ToolBar self, out ReadWriteBinding<System.Boolean> value)
     {
-        
         var metadata = System.Windows.Controls.ToolBar.IsOverflowOpenProperty.GetMetadata(typeof(System.Windows.Controls.ToolBar))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Boolean)metadata.DefaultValue);
+        self.SetBinding(System.Windows.Controls.ToolBar.IsOverflowOpenProperty, value);
+        return self;
+    }
+    
+    public static System.Windows.Controls.ToolBar WithIsOverflowOpen(this System.Windows.Controls.ToolBar self, out ReadWriteBinding<System.Boolean> value, System.Boolean initialValue)
+    {
+        value = new(initialValue);
         self.SetBinding(System.Windows.Controls.ToolBar.IsOverflowOpenProperty, value);
         return self;
     }
@@ -53,14 +57,12 @@ public static partial class UI
     
     public static System.Windows.FrameworkElement WithOverflowMode(this System.Windows.FrameworkElement self, ReadWriteBinding<System.Windows.Controls.OverflowMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.OverflowModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithHeader(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.HeaderProperty, value);
         return self;
     }
@@ -74,28 +76,24 @@ public static partial class UI
     
     public static System.Windows.Controls.ToolBar WithHeaderTemplate(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.HeaderTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithHeaderTemplateSelector(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.HeaderTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithHeaderStringFormat(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.HeaderStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithItemsSource(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Collections.IEnumerable> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.ItemsSourceProperty, value);
         return self;
     }
@@ -109,56 +107,48 @@ public static partial class UI
     
     public static System.Windows.Controls.ToolBar WithDisplayMemberPath(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.DisplayMemberPathProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithItemTemplate(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.ItemTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithItemTemplateSelector(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.ItemTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithItemStringFormat(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.ItemStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithItemBindingGroup(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.ItemBindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithItemContainerStyle(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.ItemContainerStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithItemContainerStyleSelector(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Controls.StyleSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.ItemContainerStyleSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithItemsPanel(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Controls.ItemsPanelTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.ItemsPanelProperty, value);
         return self;
     }
@@ -172,196 +162,168 @@ public static partial class UI
     
     public static System.Windows.Controls.ToolBar WithGroupStyleSelector(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Controls.GroupStyleSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.GroupStyleSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithAlternationCount(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.AlternationCountProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithIsTextSearchEnabled(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.IsTextSearchEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithIsTextSearchCaseSensitive(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.IsTextSearchCaseSensitiveProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithBorderBrush(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithBorderThickness(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithBackground(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithForeground(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithFontFamily(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithFontSize(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithFontStretch(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithFontStyle(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithFontWeight(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithHorizontalContentAlignment(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithVerticalContentAlignment(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithTabIndex(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithIsTabStop(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithPadding(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithTemplate(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithStyle(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithOverridesDefaultStyle(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithUseLayoutRounding(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithDataContext(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithBindingGroup(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithLanguage(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithName(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithTag(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithInputScope(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.InputScopeProperty, value);
         return self;
     }
@@ -382,112 +344,96 @@ public static partial class UI
     
     public static System.Windows.Controls.ToolBar WithLayoutTransform(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithWidth(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithMinWidth(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithMaxWidth(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithHeight(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithMinHeight(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithMaxHeight(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithFlowDirection(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithMargin(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithHorizontalAlignment(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithVerticalAlignment(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithFocusVisualStyle(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithCursor(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithForceCursor(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithToolTip(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithContextMenu(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.ContextMenuProperty, value);
         return self;
     }
@@ -592,98 +538,84 @@ public static partial class UI
     
     public static System.Windows.Controls.ToolBar WithAllowDrop(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithRenderTransform(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithRenderTransformOrigin(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithOpacity(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithOpacityMask(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithBitmapEffect(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithEffect(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithBitmapEffectInput(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithCacheMode(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithUid(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithVisibility(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithClipToBounds(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithClip(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithSnapsToDevicePixels(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -697,14 +629,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ToolBar WithIsEnabled(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithIsHitTestVisible(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -718,14 +648,12 @@ public static partial class UI
     
     public static System.Windows.Controls.ToolBar WithFocusable(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.ToolBar WithIsManipulationEnabled(this System.Windows.Controls.ToolBar self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.ToolBar.IsManipulationEnabledProperty, value);
         return self;
     }

@@ -8,7 +8,6 @@ public static partial class UI
 {
     public static System.Windows.Controls.Expander WithExpandDirection(this System.Windows.Controls.Expander self, out ReadWriteBinding<System.Windows.Controls.ExpandDirection> value)
     {
-        
         var metadata = System.Windows.Controls.Expander.ExpandDirectionProperty.GetMetadata(typeof(System.Windows.Controls.Expander))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Windows.Controls.ExpandDirection)metadata.DefaultValue);
@@ -16,9 +15,15 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.Expander WithExpandDirection(this System.Windows.Controls.Expander self, out ReadWriteBinding<System.Windows.Controls.ExpandDirection> value, System.Windows.Controls.ExpandDirection initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.Expander.ExpandDirectionProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.Expander WithIsExpanded(this System.Windows.Controls.Expander self, out ReadWriteBinding<System.Boolean> value)
     {
-        
         var metadata = System.Windows.Controls.Expander.IsExpandedProperty.GetMetadata(typeof(System.Windows.Controls.Expander))
             ?? throw new ArgumentException("Can't get metadata.");
         value = new((System.Boolean)metadata.DefaultValue);
@@ -26,9 +31,15 @@ public static partial class UI
         return self;
     }
     
+    public static System.Windows.Controls.Expander WithIsExpanded(this System.Windows.Controls.Expander self, out ReadWriteBinding<System.Boolean> value, System.Boolean initialValue)
+    {
+        value = new(initialValue);
+        self.SetBinding(System.Windows.Controls.Expander.IsExpandedProperty, value);
+        return self;
+    }
+    
     public static System.Windows.Controls.Expander WithHeader(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.HeaderProperty, value);
         return self;
     }
@@ -42,28 +53,24 @@ public static partial class UI
     
     public static System.Windows.Controls.Expander WithHeaderTemplate(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.HeaderTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithHeaderTemplateSelector(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.HeaderTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithHeaderStringFormat(this System.Windows.Controls.Expander self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.HeaderStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithContent(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.ContentProperty, value);
         return self;
     }
@@ -77,189 +84,162 @@ public static partial class UI
     
     public static System.Windows.Controls.Expander WithContentTemplate(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.DataTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.ContentTemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithContentTemplateSelector(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Controls.DataTemplateSelector> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.ContentTemplateSelectorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithContentStringFormat(this System.Windows.Controls.Expander self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.ContentStringFormatProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithBorderBrush(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.BorderBrushProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithBorderThickness(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.BorderThicknessProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithBackground(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.BackgroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithForeground(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.ForegroundProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithFontFamily(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Media.FontFamily> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.FontFamilyProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithFontSize(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.FontSizeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithFontStretch(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.FontStretch> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.FontStretchProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithFontStyle(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.FontStyle> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.FontStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithFontWeight(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.FontWeight> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.FontWeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithHorizontalContentAlignment(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.HorizontalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithVerticalContentAlignment(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.VerticalContentAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithTabIndex(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Int32> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.TabIndexProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithIsTabStop(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.IsTabStopProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithPadding(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.PaddingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithTemplate(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Controls.ControlTemplate> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.TemplateProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithStyle(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.StyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithOverridesDefaultStyle(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.OverridesDefaultStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithUseLayoutRounding(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.UseLayoutRoundingProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithDataContext(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.DataContextProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithBindingGroup(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Data.BindingGroup> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.BindingGroupProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithLanguage(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Markup.XmlLanguage> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.LanguageProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithName(this System.Windows.Controls.Expander self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.NameProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithTag(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.TagProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithInputScope(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Input.InputScope> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.InputScopeProperty, value);
         return self;
     }
@@ -280,112 +260,96 @@ public static partial class UI
     
     public static System.Windows.Controls.Expander WithLayoutTransform(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.LayoutTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithWidth(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.WidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithMinWidth(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.MinWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithMaxWidth(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.MaxWidthProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithHeight(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.HeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithMinHeight(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.MinHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithMaxHeight(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.MaxHeightProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithFlowDirection(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.FlowDirection> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.FlowDirectionProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithMargin(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Thickness> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.MarginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithHorizontalAlignment(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.HorizontalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.HorizontalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithVerticalAlignment(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.VerticalAlignment> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.VerticalAlignmentProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithFocusVisualStyle(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Style> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.FocusVisualStyleProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithCursor(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Input.Cursor> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.CursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithForceCursor(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.ForceCursorProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithToolTip(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Object> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.ToolTipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithContextMenu(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Controls.ContextMenu> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.ContextMenuProperty, value);
         return self;
     }
@@ -490,98 +454,84 @@ public static partial class UI
     
     public static System.Windows.Controls.Expander WithAllowDrop(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.AllowDropProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithRenderTransform(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Media.Transform> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.RenderTransformProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithRenderTransformOrigin(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Point> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.RenderTransformOriginProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithOpacity(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Double> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.OpacityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithOpacityMask(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Media.Brush> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.OpacityMaskProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithBitmapEffect(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.BitmapEffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithEffect(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Media.Effects.Effect> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.EffectProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithBitmapEffectInput(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Media.Effects.BitmapEffectInput> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.BitmapEffectInputProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithCacheMode(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Media.CacheMode> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.CacheModeProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithUid(this System.Windows.Controls.Expander self, ReadWriteBinding<System.String> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.UidProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithVisibility(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Visibility> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.VisibilityProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithClipToBounds(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.ClipToBoundsProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithClip(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Windows.Media.Geometry> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.ClipProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithSnapsToDevicePixels(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.SnapsToDevicePixelsProperty, value);
         return self;
     }
@@ -595,14 +545,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Expander WithIsEnabled(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.IsEnabledProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithIsHitTestVisible(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.IsHitTestVisibleProperty, value);
         return self;
     }
@@ -616,14 +564,12 @@ public static partial class UI
     
     public static System.Windows.Controls.Expander WithFocusable(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.FocusableProperty, value);
         return self;
     }
     
     public static System.Windows.Controls.Expander WithIsManipulationEnabled(this System.Windows.Controls.Expander self, ReadWriteBinding<System.Boolean> value)
     {
-        
         self.SetBinding(System.Windows.Controls.Expander.IsManipulationEnabledProperty, value);
         return self;
     }
